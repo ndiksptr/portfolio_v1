@@ -49,7 +49,7 @@
     </div>
 
     <!-- Header / Sticky Nav -->
-    <header class="fixed top-0 left-0 w-full z-50 px-4 md:px-8 mt-4 pointer-events-none">
+    <header class="fixed top-0 left-0 w-full z-50 px-4 md:px-6 lg:px-8 mt-4 pointer-events-none">
         <nav
             class="max-w-7xl mx-auto bg-paper/90 dark:bg-ink/90 backdrop-blur-xl border-2 border-ink dark:border-paper rounded-xl px-4 py-3 flex justify-between items-center shadow-brutal-sm pointer-events-auto">
             <a href="#"
@@ -73,7 +73,7 @@
 
             <div class="flex gap-2 md:gap-4 items-center">
                 <button id="theme-toggle" aria-label="Toggle Dark Mode"
-                    class="w-10 h-10 hard-btn bg-paper dark:bg-ink text-ink dark:text-paper rounded-lg border-2 border-ink dark:border-paper shadow-[2px_2px_0px_0px_#09090B] dark:shadow-[2px_2px_0px_0px_#F8F4E8] flex items-center justify-center cursor-interact hover:bg-acid dark:hover:bg-acid dark:hover:text-ink">
+                    class="w-11 h-11 hard-btn bg-paper dark:bg-ink text-ink dark:text-paper rounded-lg border-2 border-ink dark:border-paper shadow-[2px_2px_0px_0px_#09090B] dark:shadow-[2px_2px_0px_0px_#F8F4E8] flex items-center justify-center cursor-interact hover:bg-acid dark:hover:bg-acid dark:hover:text-ink">
                     <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
@@ -86,11 +86,11 @@
                     </svg>
                 </button>
                 <a href="#"
-                    class="hidden md:block hard-btn bg-paper dark:bg-ink text-ink dark:text-paper font-bold px-4 py-2 rounded-lg border-2 border-ink dark:border-paper shadow-[2px_2px_0px_0px_#09090B] dark:shadow-[2px_2px_0px_0px_#F8F4E8] hover:bg-acid dark:hover:bg-acid dark:hover:text-ink cursor-interact">
+                    class="hidden md:flex h-11 items-center hard-btn bg-paper dark:bg-ink text-ink dark:text-paper font-bold px-4 rounded-lg border-2 border-ink dark:border-paper shadow-[2px_2px_0px_0px_#09090B] dark:shadow-[2px_2px_0px_0px_#F8F4E8] hover:bg-acid dark:hover:bg-acid dark:hover:text-ink cursor-interact">
                     CV
                 </a>
                 <a href="#kontak"
-                    class="hard-btn bg-ink dark:bg-paper text-acid dark:text-ink font-bold px-4 py-2 rounded-lg border-2 border-ink dark:border-paper shadow-[2px_2px_0px_0px_#09090B] dark:shadow-[2px_2px_0px_0px_#F8F4E8] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-interact">
+                    class="flex h-11 items-center hard-btn bg-ink dark:bg-paper text-acid dark:text-ink font-bold px-4 rounded-lg border-2 border-ink dark:border-paper shadow-[2px_2px_0px_0px_#09090B] dark:shadow-[2px_2px_0px_0px_#F8F4E8] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-interact">
                     HUBUNGI
                 </a>
             </div>
@@ -98,7 +98,8 @@
     </header>
 
     <!-- Hero Section -->
-    <main id="profil" class="pt-32 pb-20 px-4 md:px-8 max-w-7xl mx-auto min-h-screen flex items-center">
+    <main id="profil"
+        class="pt-32 pb-14 md:pb-20 px-4 md:px-6 lg:px-8 max-w-7xl mx-auto min-h-screen flex items-center">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 w-full items-center">
 
             <!-- Hero Left -->
@@ -109,7 +110,7 @@
                 </div>
 
                 <h1
-                    class="font-display uppercase tracking-tighter text-[4rem] leading-[0.85] sm:text-[5.5rem] lg:text-[7rem] text-ink dark:text-paper break-words glitch-hover select-none flex flex-col">
+                    class="font-display uppercase tracking-tighter text-[clamp(2.5rem,14vw,7rem)] leading-[0.85] text-ink dark:text-paper break-words glitch-hover select-none flex flex-col">
                     <div class="flex overflow-hidden">
                         <span
                             class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]"
@@ -411,7 +412,7 @@
     </section>
 
     <!-- Horizontal Scroll Section (Proyek) -->
-    <section class="max-w-7xl mx-auto px-4 md:px-8 py-20" id="proyek">
+    <section class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-14 md:py-20" id="proyek">
         <div class="flex justify-between items-center mb-8 reveal-hidden">
             <h2 class="font-display text-4xl md:text-5xl uppercase">Proyek</h2>
 
@@ -439,119 +440,12 @@
 
         <div id="project-scroll-container"
             class="flex overflow-x-auto gap-8 pb-8 pt-4 px-2 -mx-2 no-scrollbar snap-x reveal-hidden" data-delay="100">
-
-            <!-- Project 1 -->
-            <div
-                class="w-[320px] md:w-[380px] shrink-0 border-2 border-ink dark:border-paper rounded-2xl bg-paper dark:bg-ink shadow-brutal-lg p-4 group snap-center cursor-none hover:-translate-y-2 transition-transform duration-300">
-                <div
-                    class="aspect-video border-2 border-ink dark:border-paper rounded-xl overflow-hidden bg-ink mb-4 relative">
-                    <span
-                        class="absolute top-2 left-2 bg-acid text-ink font-mono text-xs font-bold px-2 py-1 rounded-sm border-2 border-ink z-10">FULLSTACK</span>
-                    <img src="image/project/readonl1ne.png" alt="ReadOnl1ne"
-                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        loading="lazy" onerror="this.src='https://placehold.co/600x338/09090b/d2e823?text=READONL1NE'">
-                </div>
-                <div class="flex justify-between items-start mb-2">
-                    <h4 class="font-display uppercase text-xl line-clamp-1">ReadOnl1ne</h4>
-                    <span
-                        class="font-mono font-bold bg-ink dark:bg-paper text-paper dark:text-ink px-2 py-1 rounded-md text-xs border-2 border-transparent dark:border-paper shrink-0">CI4
-                        & MySQL</span>
-                </div>
-                <p class="font-body text-sm opacity-80 mb-4 h-20 overflow-y-auto no-scrollbar">E-commerce buku digital
-                    dengan MVC. Fitur autentikasi, katalog, pencarian, dan dashboard admin. Dibuat Sep 2025 - Jan 2026.
-                    Desain UI di Figma, dokumen UML & ERD lengkap.</p>
-                <button
-                    class="w-full hard-btn bg-paper dark:bg-ink border-2 border-ink dark:border-paper py-2 rounded-lg font-bold shadow-brutal-sm hover:bg-acid dark:hover:bg-acid dark:hover:text-ink hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-interact text-sm uppercase">
-                    Detail Proyek
-                </button>
-            </div>
-
-            <!-- Project 2 -->
-            <div
-                class="w-[320px] md:w-[380px] shrink-0 border-2 border-ink dark:border-paper rounded-2xl bg-paper dark:bg-ink shadow-brutal-lg p-4 group snap-center cursor-none hover:-translate-y-2 transition-transform duration-300">
-                <div
-                    class="aspect-video border-2 border-ink dark:border-paper rounded-xl overflow-hidden bg-ink mb-4 relative">
-                    <img src="image/project/e-warkas.png" alt="E-Warkas"
-                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        loading="lazy" onerror="this.src='https://placehold.co/600x338/09090b/f8f4e8?text=E-WARKAS'">
-                </div>
-                <div class="flex justify-between items-start mb-2">
-                    <h4 class="font-display uppercase text-xl line-clamp-1">E-Warkas</h4>
-                </div>
-                <p class="font-body text-sm opacity-80 mb-4 h-20 overflow-y-auto no-scrollbar">[Placeholder: Deskripsi
-                    singkat tentang proyek E-Warkas. Teknologi yang digunakan dan peran dalam pengembangan.]</p>
-                <button
-                    class="w-full hard-btn bg-paper dark:bg-ink border-2 border-ink dark:border-paper py-2 rounded-lg font-bold shadow-brutal-sm hover:bg-acid dark:hover:bg-acid dark:hover:text-ink hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-interact text-sm uppercase">
-                    Detail Proyek
-                </button>
-            </div>
-
-            <!-- Project 3 -->
-            <div
-                class="w-[320px] md:w-[380px] shrink-0 border-2 border-ink dark:border-paper rounded-2xl bg-paper dark:bg-ink shadow-brutal-lg p-4 group snap-center cursor-none hover:-translate-y-2 transition-transform duration-300">
-                <div
-                    class="aspect-video border-2 border-ink dark:border-paper rounded-xl overflow-hidden bg-ink mb-4 relative">
-                    <img src="image/project/fams.png" alt="FAMS"
-                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        loading="lazy" onerror="this.src='https://placehold.co/600x338/09090b/f8f4e8?text=FAMS'">
-                </div>
-                <div class="flex justify-between items-start mb-2">
-                    <h4 class="font-display uppercase text-xl line-clamp-1">FAMS</h4>
-                </div>
-                <p class="font-body text-sm opacity-80 mb-4 h-20 overflow-y-auto no-scrollbar">[Placeholder: Sistem FAMS
-                    (Fixed Asset Management System?). Modul utama dan penyelesaian masalah.]</p>
-                <button
-                    class="w-full hard-btn bg-paper dark:bg-ink border-2 border-ink dark:border-paper py-2 rounded-lg font-bold shadow-brutal-sm hover:bg-acid dark:hover:bg-acid dark:hover:text-ink hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-interact text-sm uppercase">
-                    Detail Proyek
-                </button>
-            </div>
-
-            <!-- Project 4 -->
-            <div
-                class="w-[320px] md:w-[380px] shrink-0 border-2 border-ink dark:border-paper rounded-2xl bg-paper dark:bg-ink shadow-brutal-lg p-4 group snap-center cursor-none hover:-translate-y-2 transition-transform duration-300">
-                <div
-                    class="aspect-video border-2 border-ink dark:border-paper rounded-xl overflow-hidden bg-ink mb-4 relative">
-                    <img src="image/project/apotek_berkat.png" alt="Apotek Berkat"
-                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        onerror="this.src='https://placehold.co/600x338/09090b/f8f4e8?text=APOTEK+BERKAT'">
-                </div>
-                <div class="flex justify-between items-start mb-2">
-                    <h4 class="font-display uppercase text-xl line-clamp-1">Apotek Berkat</h4>
-                </div>
-                <p class="font-body text-sm opacity-80 mb-4 h-20 overflow-y-auto no-scrollbar">[Placeholder: Aplikasi
-                    sistem informasi atau penjualan untuk Apotek Berkat. Fitur inventaris dan kasir.]</p>
-                <button
-                    class="w-full hard-btn bg-paper dark:bg-ink border-2 border-ink dark:border-paper py-2 rounded-lg font-bold shadow-brutal-sm hover:bg-acid dark:hover:bg-acid dark:hover:text-ink hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-interact text-sm uppercase">
-                    Detail Proyek
-                </button>
-            </div>
-
-            <!-- Project 5 -->
-            <div
-                class="w-[320px] md:w-[380px] shrink-0 border-2 border-ink dark:border-paper rounded-2xl bg-paper dark:bg-ink shadow-brutal-lg p-4 group snap-center cursor-none hover:-translate-y-2 transition-transform duration-300">
-                <div
-                    class="aspect-video border-2 border-ink dark:border-paper rounded-xl overflow-hidden bg-ink mb-4 relative">
-                    <img src="image/project/undangankhitan.png" alt="Undangan Khitan"
-                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        loading="lazy" onerror="this.src='https://placehold.co/600x338/09090b/f8f4e8?text=UNDANGAN'">
-                </div>
-                <div class="flex justify-between items-start mb-2">
-                    <h4 class="font-display uppercase text-xl line-clamp-1">Undangan Khitan</h4>
-                </div>
-                <p class="font-body text-sm opacity-80 mb-4 h-20 overflow-y-auto no-scrollbar">[Placeholder: Website
-                    undangan digital interaktif. Desain UI/UX dan animasi yang digunakan.]</p>
-                <button
-                    class="w-full hard-btn bg-paper dark:bg-ink border-2 border-ink dark:border-paper py-2 rounded-lg font-bold shadow-brutal-sm hover:bg-acid dark:hover:bg-acid dark:hover:text-ink hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-interact text-sm uppercase">
-                    Detail Proyek
-                </button>
-            </div>
-
+            <!-- Cards will be populated by JS -->
         </div>
     </section>
 
     <!-- Experience Timeline -->
-    <section class="max-w-4xl mx-auto px-4 md:px-8 py-20" id="pengalaman">
+    <section class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8 py-14 md:py-20" id="pengalaman">
         <h2 class="font-display text-4xl md:text-5xl uppercase mb-16 text-center glitch-hover reveal-hidden">Pengalaman
         </h2>
 
@@ -648,14 +542,14 @@
     </section>
 
     <!-- Sertifikat & Organisasi -->
-    <section class="bg-acid text-ink py-20 border-y-2 border-ink dark:border-paper relative overflow-hidden"
+    <section class="bg-acid text-ink py-14 md:py-20 border-y-2 border-ink dark:border-paper relative overflow-hidden"
         id="sertifikat">
-        <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 relative z-10">
             <h2 class="font-display text-4xl md:text-5xl uppercase mb-12 glitch-hover">Sertifikasi BNSP</h2>
 
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-20">
                 <!-- Cert 1 -->
-                <div class="bg-paper border-2 border-ink rounded-xl p-6 shadow-brutal-lg flex flex-col justify-between relative overflow-hidden reveal-hidden"
+                <div class="bg-paper border-2 border-ink rounded-xl p-6 shadow-brutal-md md:shadow-brutal-lg flex flex-col justify-between relative overflow-hidden reveal-hidden"
                     data-delay="0">
                     <div
                         class="absolute w-6 h-6 bg-acid rounded-full -left-3 top-1/2 -translate-y-1/2 border-r-2 border-ink">
@@ -682,7 +576,7 @@
                 </div>
 
                 <!-- Cert 2 -->
-                <div class="bg-paper border-2 border-ink rounded-xl p-6 shadow-brutal-lg flex flex-col justify-between relative overflow-hidden reveal-hidden"
+                <div class="bg-paper border-2 border-ink rounded-xl p-6 shadow-brutal-md md:shadow-brutal-lg flex flex-col justify-between relative overflow-hidden reveal-hidden"
                     data-delay="100">
                     <div
                         class="absolute w-6 h-6 bg-acid rounded-full -left-3 top-1/2 -translate-y-1/2 border-r-2 border-ink">
@@ -709,7 +603,7 @@
                 </div>
 
                 <!-- Cert 3 -->
-                <div class="bg-paper border-2 border-ink rounded-xl p-6 shadow-brutal-lg flex flex-col justify-between relative overflow-hidden reveal-hidden"
+                <div class="bg-paper border-2 border-ink rounded-xl p-6 shadow-brutal-md md:shadow-brutal-lg flex flex-col justify-between relative overflow-hidden reveal-hidden"
                     data-delay="200">
                     <div
                         class="absolute w-6 h-6 bg-acid rounded-full -left-3 top-1/2 -translate-y-1/2 border-r-2 border-ink">
@@ -814,8 +708,107 @@
         </div>
     </div>
 
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="fixed inset-0 z-[20000] hidden items-center justify-center p-4 md:p-8" role="dialog"
+        aria-modal="true" aria-labelledby="pm-title">
+        <!-- Backdrop -->
+        <div id="pm-backdrop"
+            class="absolute inset-0 bg-ink/80 dark:bg-ink/90 backdrop-blur-sm modal-backdrop-enter cursor-interact"
+            aria-label="Tutup Modal"></div>
+
+        <!-- Modal Card -->
+        <div id="pm-card"
+            class="relative w-[calc(100%-32px)] md:w-full max-w-5xl max-h-[calc(100dvh-24px)] bg-paper dark:bg-ink border-2 border-ink dark:border-paper rounded-[32px] shadow-[4px_4px_0px_0px_#09090B] md:shadow-[8px_8px_0px_0px_#09090B] dark:shadow-[4px_4px_0px_0px_#F8F4E8] md:dark:shadow-[8px_8px_0px_0px_#F8F4E8] modal-card-enter flex flex-col overflow-hidden box-border"
+            tabindex="-1">
+
+            <!-- Scrollable Content -->
+            <div class="flex-1 overflow-y-auto overscroll-contain no-scrollbar p-[var(--modal-pad)] pb-0 relative">
+
+                <!-- Sticky Close Button -->
+                <div class="sticky top-0 z-30 flex justify-end h-0 pointer-events-none w-full">
+                    <button id="pm-close"
+                        class="pointer-events-auto absolute -top-2 -right-2 w-11 h-11 bg-acid border-2 border-ink rounded-lg text-ink font-bold flex items-center justify-center hover:-translate-y-1 hover:translate-x-1 shadow-[2px_2px_0px_0px_#09090B] transition-all cursor-interact"
+                        aria-label="Tutup detail proyek">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-[var(--gap-lg)] md:gap-[var(--gap-xl)] h-full pb-8">
+                    <!-- Left Column: Image -->
+                    <div class="flex flex-col">
+                        <div
+                            class="aspect-[16/10] md:aspect-[4/3] border-2 border-ink dark:border-paper rounded-2xl overflow-hidden bg-ink shadow-brutal-md w-full">
+                            <img id="pm-image" src="" alt="Gambar Proyek" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Content -->
+                    <div class="flex flex-col gap-[var(--gap-md)] flex-1">
+                        <div>
+                            <span id="pm-type"
+                                class="bg-acid text-ink font-mono text-xs font-bold px-3 py-1 rounded-sm border-2 border-ink inline-block">TYPE</span>
+                        </div>
+
+                        <h3 id="pm-title"
+                            class="font-display text-3xl md:text-5xl uppercase text-ink dark:text-paper leading-none overflow-wrap-anywhere pr-12">
+                            Title
+                        </h3>
+
+                        <p id="pm-desc"
+                            class="font-body text-base md:text-lg text-ink/80 dark:text-paper/80 leading-relaxed">
+                            Description
+                        </p>
+
+                        <div id="pm-stack-container" class="flex flex-wrap gap-2">
+                            <!-- Chips injected here -->
+                        </div>
+
+                        <div id="pm-links"
+                            class="flex flex-wrap gap-3 mt-auto pt-4 border-t-2 border-ink/10 dark:border-paper/10">
+                            <!-- Links injected here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Navigation -->
+            <div class="w-full bg-paper dark:bg-ink border-t-2 border-ink dark:border-paper px-[var(--modal-pad)] py-[var(--gap-md)] flex justify-between items-center z-10 shrink-0"
+                style="padding-bottom: max(var(--gap-md), env(safe-area-inset-bottom));">
+                <button id="pm-prev"
+                    class="hard-btn bg-paper dark:bg-ink text-ink dark:text-paper border-2 border-ink dark:border-paper rounded-lg h-11 px-4 font-mono font-bold text-sm flex items-center justify-center gap-2 hover:bg-acid hover:text-ink cursor-interact"
+                    aria-label="Proyek Sebelumnya">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    <span class="hidden sm:inline">SEBELUMNYA</span>
+                </button>
+                <div
+                    class="font-mono font-bold text-ink dark:text-paper tabular-nums tracking-widest bg-acid/20 px-3 py-1.5 rounded border-2 border-transparent dark:border-paper/20">
+                    <span id="pm-current-index">1</span> / <span id="pm-total">5</span>
+                </div>
+                <button id="pm-next"
+                    class="hard-btn bg-paper dark:bg-ink text-ink dark:text-paper border-2 border-ink dark:border-paper rounded-lg h-11 px-4 font-mono font-bold text-sm flex items-center justify-center gap-2 hover:bg-acid hover:text-ink cursor-interact"
+                    aria-label="Proyek Berikutnya">
+                    <span class="hidden sm:inline">BERIKUTNYA</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer / Kontak -->
-    <footer class="bg-ink text-paper pt-20 pb-10 px-4 md:px-8 mt-20 relative overflow-hidden" id="kontak">
+    <footer class="bg-ink text-paper pt-14 pb-10 md:pt-20 px-4 md:px-6 lg:px-8 mt-20 relative overflow-hidden"
+        id="kontak">
         <!-- Abstract shape -->
         <div class="absolute -top-40 -right-40 w-96 h-96 bg-acid rounded-full opacity-5 blur-3xl pointer-events-none">
         </div>

@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --gap-sm: 8px;
+    --gap-md: 16px;
+    --gap-lg: 24px;
+    --gap-xl: 32px;
+    --modal-pad: 30px;
+  }
+
   body {
     @apply bg-paper text-ink transition-colors duration-300;
     cursor: none;
@@ -46,7 +54,7 @@
   }
 
   .custom-cursor {
-    @apply fixed top-0 left-0 w-8 h-8 rounded-full bg-white pointer-events-none z-[10000] mix-blend-difference hidden md:block;
+    @apply fixed top-0 left-0 w-8 h-8 rounded-full bg-white pointer-events-none z-[30000] mix-blend-difference hidden md:block;
     transform: translate(-50%, -50%);
     transition: width 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
       height 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -128,6 +136,67 @@
   .reveal-visible {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  /* Modal Animation Classes */
+  .modal-backdrop-enter {
+    animation: fadeIn 0.2s ease-out forwards;
+  }
+
+  .modal-backdrop-exit {
+    animation: fadeOut 0.2s ease-out forwards;
+  }
+
+  .modal-card-enter {
+    animation: modalCardEnter 0.35s cubic-bezier(0.2, 0.9, 0.2, 1) forwards;
+  }
+
+  .modal-card-exit {
+    animation: modalCardExit 0.2s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes modalCardEnter {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes modalCardExit {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(24px) scale(0.96);
   }
 }
 
