@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andika Saputra | Portfolio</title>
-    <meta name="description" content="Portfolio Andika Saputra, Mahasiswa Manajemen Informatika Politeknik LP3I Jakarta. Junior System Engineer, Web Developer, dan Database Administrator.">
-    
+    <meta name="description"
+        content="Portfolio Andika Saputra, Mahasiswa Manajemen Informatika Politeknik LP3I Jakarta. Junior System Engineer, Web Developer, dan Database Administrator.">
+
     <!-- Check Theme Early to prevent FOUC -->
     <script>
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -17,10 +19,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="./css/output.css">
 </head>
+
 <body class="font-body antialiased selection:bg-acid selection:text-ink">
 
     <!-- Global Noise Overlay -->
@@ -30,40 +35,62 @@
     <div id="custom-cursor" class="custom-cursor hidden md:block"></div>
 
     <!-- Preloader -->
-    <div id="preloader" class="fixed inset-0 bg-ink z-[11000] flex flex-col justify-end transition-transform duration-500 ease-in-out">
+    <div id="preloader"
+        class="fixed inset-0 bg-ink z-[11000] flex flex-col justify-end transition-transform duration-500 ease-in-out">
         <div class="w-full h-8 bg-paper relative">
-            <div id="preloader-bar" class="absolute top-0 left-0 h-full bg-acid w-0 transition-all duration-[1200ms] ease-out"></div>
+            <div id="preloader-bar"
+                class="absolute top-0 left-0 h-full bg-acid w-0 transition-all duration-[1200ms] ease-out"></div>
         </div>
         <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <span class="font-display text-4xl text-paper text-outline-sm uppercase tracking-tighter animate-pulse">SYSTEM BOOT...</span>
+            <span
+                class="font-display text-4xl text-paper text-outline-sm uppercase tracking-tighter animate-pulse">SYSTEM
+                BOOT...</span>
         </div>
     </div>
 
     <!-- Header / Sticky Nav -->
     <header class="fixed top-0 left-0 w-full z-50 px-4 md:px-8 mt-4 pointer-events-none">
-        <nav class="max-w-7xl mx-auto bg-paper/90 dark:bg-ink/90 backdrop-blur-xl border-2 border-ink dark:border-paper rounded-xl px-4 py-3 flex justify-between items-center shadow-brutal-sm pointer-events-auto">
-            <a href="#" class="font-display text-xl uppercase tracking-tighter text-ink dark:text-paper flex items-center gap-2 cursor-interact">
+        <nav
+            class="max-w-7xl mx-auto bg-paper/90 dark:bg-ink/90 backdrop-blur-xl border-2 border-ink dark:border-paper rounded-xl px-4 py-3 flex justify-between items-center shadow-brutal-sm pointer-events-auto">
+            <a href="#"
+                class="font-display text-xl uppercase tracking-tighter text-ink dark:text-paper flex items-center gap-2 cursor-interact">
                 <span class="w-4 h-4 bg-acid border-2 border-ink dark:border-paper rounded-sm block"></span>
                 Andika<span class="text-outline-sm">Saputra</span>
             </a>
-            
+
             <div class="hidden lg:flex gap-6 font-bold text-sm font-mono uppercase">
-                <a href="#profil" class="hover:text-acid dark:hover:text-acid hover:underline decoration-2 underline-offset-4 transition-colors cursor-interact">Profil</a>
-                <a href="#proyek" class="hover:text-acid dark:hover:text-acid hover:underline decoration-2 underline-offset-4 transition-colors cursor-interact">Proyek</a>
-                <a href="#pengalaman" class="hover:text-acid dark:hover:text-acid hover:underline decoration-2 underline-offset-4 transition-colors cursor-interact">Pengalaman</a>
-                <a href="#sertifikat" class="hover:text-acid dark:hover:text-acid hover:underline decoration-2 underline-offset-4 transition-colors cursor-interact">Sertifikat</a>
-                <a href="#kontak" class="hover:text-acid dark:hover:text-acid hover:underline decoration-2 underline-offset-4 transition-colors cursor-interact">Kontak</a>
+                <a href="#profil"
+                    class="hover:text-acid dark:hover:text-acid hover:underline decoration-2 underline-offset-4 transition-colors cursor-interact">Profil</a>
+                <a href="#proyek"
+                    class="hover:text-acid dark:hover:text-acid hover:underline decoration-2 underline-offset-4 transition-colors cursor-interact">Proyek</a>
+                <a href="#pengalaman"
+                    class="hover:text-acid dark:hover:text-acid hover:underline decoration-2 underline-offset-4 transition-colors cursor-interact">Pengalaman</a>
+                <a href="#sertifikat"
+                    class="hover:text-acid dark:hover:text-acid hover:underline decoration-2 underline-offset-4 transition-colors cursor-interact">Sertifikat</a>
+                <a href="#kontak"
+                    class="hover:text-acid dark:hover:text-acid hover:underline decoration-2 underline-offset-4 transition-colors cursor-interact">Kontak</a>
             </div>
 
             <div class="flex gap-2 md:gap-4 items-center">
-                <button id="theme-toggle" aria-label="Toggle Dark Mode" class="w-10 h-10 hard-btn bg-paper dark:bg-ink text-ink dark:text-paper rounded-lg border-2 border-ink dark:border-paper shadow-[2px_2px_0px_0px_#09090B] dark:shadow-[2px_2px_0px_0px_#F8F4E8] flex items-center justify-center cursor-interact hover:bg-acid dark:hover:bg-acid dark:hover:text-ink">
-                    <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
-                    <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                <button id="theme-toggle" aria-label="Toggle Dark Mode"
+                    class="w-10 h-10 hard-btn bg-paper dark:bg-ink text-ink dark:text-paper rounded-lg border-2 border-ink dark:border-paper shadow-[2px_2px_0px_0px_#09090B] dark:shadow-[2px_2px_0px_0px_#F8F4E8] flex items-center justify-center cursor-interact hover:bg-acid dark:hover:bg-acid dark:hover:text-ink">
+                    <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                        </path>
+                    </svg>
                 </button>
-                <a href="#" class="hidden md:block hard-btn bg-paper dark:bg-ink text-ink dark:text-paper font-bold px-4 py-2 rounded-lg border-2 border-ink dark:border-paper shadow-[2px_2px_0px_0px_#09090B] dark:shadow-[2px_2px_0px_0px_#F8F4E8] hover:bg-acid dark:hover:bg-acid dark:hover:text-ink cursor-interact">
+                <a href="#"
+                    class="hidden md:block hard-btn bg-paper dark:bg-ink text-ink dark:text-paper font-bold px-4 py-2 rounded-lg border-2 border-ink dark:border-paper shadow-[2px_2px_0px_0px_#09090B] dark:shadow-[2px_2px_0px_0px_#F8F4E8] hover:bg-acid dark:hover:bg-acid dark:hover:text-ink cursor-interact">
                     CV
                 </a>
-                <a href="#kontak" class="hard-btn bg-ink dark:bg-paper text-acid dark:text-ink font-bold px-4 py-2 rounded-lg border-2 border-ink dark:border-paper shadow-[2px_2px_0px_0px_#09090B] dark:shadow-[2px_2px_0px_0px_#F8F4E8] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-interact">
+                <a href="#kontak"
+                    class="hard-btn bg-ink dark:bg-paper text-acid dark:text-ink font-bold px-4 py-2 rounded-lg border-2 border-ink dark:border-paper shadow-[2px_2px_0px_0px_#09090B] dark:shadow-[2px_2px_0px_0px_#F8F4E8] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-interact">
                     HUBUNGI
                 </a>
             </div>
@@ -73,43 +100,75 @@
     <!-- Hero Section -->
     <main id="profil" class="pt-32 pb-20 px-4 md:px-8 max-w-7xl mx-auto min-h-screen flex items-center">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 w-full items-center">
-            
+
             <!-- Hero Left -->
             <div class="lg:col-span-7 flex flex-col items-start relative z-10">
-                <div class="absolute -top-10 -left-6 md:-left-10 bg-acid border-2 border-ink text-ink font-mono font-bold text-sm px-4 py-2 rounded-full rotate-[-6deg] shadow-brutal-sm z-20 hover:rotate-0 transition-transform">
+                <div
+                    class="absolute -top-10 -left-6 md:-left-10 bg-acid border-2 border-ink text-ink font-mono font-bold text-sm px-4 py-2 rounded-full rotate-[-6deg] shadow-brutal-sm z-20 hover:rotate-0 transition-transform">
                     * TERSEDIA UNTUK BEKERJA
                 </div>
 
-                <h1 class="font-display uppercase tracking-tighter text-[4rem] leading-[0.85] sm:text-[5.5rem] lg:text-[7rem] text-ink dark:text-paper break-words glitch-hover select-none flex flex-col">
+                <h1
+                    class="font-display uppercase tracking-tighter text-[4rem] leading-[0.85] sm:text-[5.5rem] lg:text-[7rem] text-ink dark:text-paper break-words glitch-hover select-none flex flex-col">
                     <div class="flex overflow-hidden">
-                        <span class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]" style="transition-delay: 0ms">A</span>
-                        <span class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]" style="transition-delay: 45ms">N</span>
-                        <span class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]" style="transition-delay: 90ms">D</span>
-                        <span class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]" style="transition-delay: 135ms">I</span>
-                        <span class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]" style="transition-delay: 180ms">K</span>
-                        <span class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]" style="transition-delay: 225ms">A</span>
+                        <span
+                            class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]"
+                            style="transition-delay: 0ms">A</span>
+                        <span
+                            class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]"
+                            style="transition-delay: 45ms">N</span>
+                        <span
+                            class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]"
+                            style="transition-delay: 90ms">D</span>
+                        <span
+                            class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]"
+                            style="transition-delay: 135ms">I</span>
+                        <span
+                            class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]"
+                            style="transition-delay: 180ms">K</span>
+                        <span
+                            class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]"
+                            style="transition-delay: 225ms">A</span>
                     </div>
                     <div class="flex overflow-hidden text-outline">
-                        <span class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]" style="transition-delay: 270ms">S</span>
-                        <span class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]" style="transition-delay: 315ms">A</span>
-                        <span class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]" style="transition-delay: 360ms">P</span>
-                        <span class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]" style="transition-delay: 405ms">U</span>
-                        <span class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]" style="transition-delay: 450ms">T</span>
-                        <span class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]" style="transition-delay: 495ms">R</span>
-                        <span class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]" style="transition-delay: 540ms">A</span>
+                        <span
+                            class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]"
+                            style="transition-delay: 270ms">S</span>
+                        <span
+                            class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]"
+                            style="transition-delay: 315ms">A</span>
+                        <span
+                            class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]"
+                            style="transition-delay: 360ms">P</span>
+                        <span
+                            class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]"
+                            style="transition-delay: 405ms">U</span>
+                        <span
+                            class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]"
+                            style="transition-delay: 450ms">T</span>
+                        <span
+                            class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]"
+                            style="transition-delay: 495ms">R</span>
+                        <span
+                            class="hero-char opacity-0 translate-y-full transition-all duration-500 ease-[cubic-bezier(.2,.9,.2,1)]"
+                            style="transition-delay: 540ms">A</span>
                     </div>
                 </h1>
-                
-                <div class="mt-6 font-mono text-xl md:text-2xl font-bold text-ink dark:text-paper bg-acid/20 px-3 py-1 inline-block border-2 border-transparent border-l-acid">
+
+                <div
+                    class="mt-6 font-mono text-xl md:text-2xl font-bold text-ink dark:text-paper bg-acid/20 px-3 py-1 inline-block border-2 border-transparent border-l-acid">
                     > <span id="typing-text"></span><span class="animate-pulse">_</span>
                 </div>
 
-                <p class="mt-6 text-lg md:text-xl font-medium max-w-lg leading-relaxed text-ink/80 dark:text-paper/80 reveal-hidden" data-delay="100">
-                    Mahasiswa Manajemen Informatika yang ahli dalam infrastruktur jaringan, administrasi server, dan pengembangan web full-stack MVC.
+                <p class="mt-6 text-lg md:text-xl font-medium max-w-lg leading-relaxed text-ink/80 dark:text-paper/80 reveal-hidden"
+                    data-delay="100">
+                    Mahasiswa Manajemen Informatika yang ahli dalam infrastruktur jaringan, administrasi server, dan
+                    pengembangan web full-stack MVC.
                 </p>
 
                 <div class="mt-10 flex flex-wrap gap-6 items-center reveal-hidden" data-delay="200">
-                    <a href="#proyek" class="hard-btn bg-ink dark:bg-paper text-acid dark:text-ink font-display tracking-wide text-xl px-8 py-4 rounded-xl border-2 border-ink dark:border-paper shadow-brutal-lg hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none cursor-interact">
+                    <a href="#proyek"
+                        class="hard-btn bg-ink dark:bg-paper text-acid dark:text-ink font-display tracking-wide text-xl px-8 py-4 rounded-xl border-2 border-ink dark:border-paper shadow-brutal-lg hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none cursor-interact">
                         LIHAT PROYEK
                     </a>
                 </div>
@@ -117,25 +176,30 @@
 
             <!-- Hero Right -->
             <div class="lg:col-span-5 relative mt-12 lg:mt-0 reveal-hidden" data-delay="300">
-                <div class="rounded-[32px] border-2 border-ink dark:border-paper bg-ink overflow-hidden shadow-brutal-lg aspect-square relative group">
-                    <img src="image/profile/profile-andika.jpeg" alt="Andika Saputra" class="w-full h-full object-cover filter contrast-125 grayscale group-hover:grayscale-0 transition-all duration-700">
+                <div
+                    class="rounded-[32px] border-2 border-ink dark:border-paper bg-ink overflow-hidden shadow-brutal-lg aspect-square relative group">
+                    <img src="image/profile/profile-andika.jpeg" alt="Andika Saputra"
+                        class="w-full h-full object-cover filter contrast-125 grayscale group-hover:grayscale-0 transition-all duration-700">
                     <div class="absolute inset-0 bg-acid mix-blend-overlay opacity-20"></div>
                 </div>
 
-                <div class="absolute -bottom-6 -left-6 md:-left-12 bg-acid border-2 border-ink p-4 shadow-brutal-md rounded-2xl w-48 animate-float text-ink z-20">
+                <!-- <div
+                    class="absolute -bottom-6 -left-6 md:-left-12 bg-acid border-2 border-ink p-4 shadow-brutal-md rounded-2xl w-48 animate-float text-ink z-20">
                     <div class="font-mono text-xs font-bold flex flex-col gap-1 text-center">
                         <span class="text-xs uppercase opacity-80">Politeknik LP3I</span>
                         <span class="text-3xl font-display">3.72</span>
                         <span class="text-xs">IPK / 4.00</span>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </main>
 
     <!-- Marquee Section -->
-    <div class="border-y-2 border-ink dark:border-paper bg-acid py-4 overflow-hidden relative rotate-[-1deg] scale-105 my-12 shadow-brutal-sm z-20 marquee-wrapper">
-        <div class="animate-marquee font-display text-2xl md:text-3xl uppercase tracking-wide text-ink flex gap-12 whitespace-nowrap cursor-none">
+    <div
+        class="border-y-2 border-ink dark:border-paper bg-acid py-4 overflow-hidden relative rotate-[-1deg] scale-105 my-12 shadow-brutal-sm z-20 marquee-wrapper">
+        <div
+            class="animate-marquee font-display text-2xl md:text-3xl uppercase tracking-wide text-ink flex gap-12 whitespace-nowrap cursor-none">
             <span>+ WEB DEVELOPMENT</span>
             <span class="text-outline-sm">+ SYSTEM ADMINISTRATOR</span>
             <span>+ MIKROTIK EXPERT</span>
@@ -151,29 +215,37 @@
     <section class="max-w-7xl mx-auto px-4 md:px-8 py-20" id="tentang">
         <div class="flex justify-between items-end mb-10 reveal-hidden">
             <h2 class="font-display text-4xl md:text-6xl uppercase glitch-hover">Tentang<br>Saya</h2>
-            <span class="font-mono font-bold border-2 border-ink dark:border-paper px-4 py-1 rounded-full shadow-brutal-sm bg-paper dark:bg-ink hidden sm:inline-block">SYS_INFO_01</span>
+            <span
+                class="font-mono font-bold border-2 border-ink dark:border-paper px-4 py-1 rounded-full shadow-brutal-sm bg-paper dark:bg-ink hidden sm:inline-block">SYS_INFO_01</span>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-auto md:auto-rows-[300px]">
-            
+
             <!-- Large Card (Span 2) -->
-            <div class="md:col-span-2 bg-ink dark:bg-paper border-2 border-ink dark:border-paper rounded-[32px] p-8 md:p-10 relative overflow-hidden group shadow-brutal-lg transition-transform hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none flex flex-col justify-between reveal-hidden" data-delay="0">
+            <div class="md:col-span-2 bg-ink dark:bg-paper border-2 border-ink dark:border-paper rounded-[32px] p-8 md:p-10 relative overflow-hidden group shadow-brutal-lg transition-transform hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none flex flex-col justify-between reveal-hidden"
+                data-delay="0">
                 <div class="absolute inset-0 opacity-10 bg-[length:20px_20px] bg-dot-pattern"></div>
                 <div class="relative z-10">
-                    <span class="bg-acid text-ink font-mono text-sm font-bold px-3 py-1 rounded-sm border-2 border-ink dark:border-transparent inline-block mb-4">
+                    <span
+                        class="bg-acid text-ink font-mono text-sm font-bold px-3 py-1 rounded-sm border-2 border-ink dark:border-transparent inline-block mb-4">
                         PROFIL
                     </span>
                     <p class="font-body font-medium text-lg md:text-xl text-paper dark:text-ink leading-relaxed">
-                        Mahasiswa aktif Program Studi Manajemen Informatika Politeknik LP3I Jakarta yang memiliki ketertarikan dalam bidang administrasi dokumen, operasional jaringan, dan web development. Memiliki kemampuan dalam membangun website, menangani permasalahan ringan pada hardware dan software, serta memahami dasar administrasi dan jaringan komputer.
+                        Mahasiswa aktif Program Studi Manajemen Informatika Politeknik LP3I Jakarta yang memiliki
+                        ketertarikan dalam bidang administrasi dokumen, operasional jaringan, dan web development.
+                        Memiliki kemampuan dalam membangun website, menangani permasalahan ringan pada hardware dan
+                        software, serta memahami dasar administrasi dan jaringan komputer.
                     </p>
                     <p class="font-body font-medium text-md text-paper/80 dark:text-ink/80 mt-4">
-                        Jujur, disiplin, mampu bekerja secara individu maupun dalam tim, serta memiliki semangat belajar yang tinggi untuk terus mengembangkan kemampuan dan berkontribusi secara profesional.
+                        Jujur, disiplin, mampu bekerja secara individu maupun dalam tim, serta memiliki semangat belajar
+                        yang tinggi untuk terus mengembangkan kemampuan dan berkontribusi secara profesional.
                     </p>
                 </div>
             </div>
 
             <!-- Stats Card -->
-            <div class="bg-acid border-2 border-ink dark:border-paper rounded-[32px] p-8 shadow-brutal-lg group transition-transform hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none flex flex-col justify-between reveal-hidden text-ink" data-delay="100">
+            <div class="bg-acid border-2 border-ink dark:border-paper rounded-[32px] p-8 shadow-brutal-lg group transition-transform hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none flex flex-col justify-between reveal-hidden text-ink"
+                data-delay="100">
                 <h3 class="font-display text-2xl uppercase mb-2">Statistik</h3>
                 <div class="grid grid-cols-2 gap-4 font-mono font-bold">
                     <div>
@@ -196,45 +268,54 @@
             </div>
 
             <!-- Education Card (Span 3) -->
-            <div class="md:col-span-3 bg-paper dark:bg-ink border-2 border-ink dark:border-paper rounded-[32px] p-8 shadow-brutal-lg flex flex-col md:flex-row items-center gap-8 group transition-transform hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none reveal-hidden" data-delay="200">
+            <div class="md:col-span-3 bg-paper dark:bg-ink border-2 border-ink dark:border-paper rounded-[32px] p-8 shadow-brutal-lg flex flex-col md:flex-row items-center gap-8 group transition-transform hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none reveal-hidden"
+                data-delay="200">
                 <div class="flex-1 w-full">
                     <h3 class="font-display text-3xl uppercase mb-6">Pendidikan</h3>
-                    
+
                     <div class="flex items-start gap-4 mb-6">
                         <div class="w-16 h-16 shrink-0 rounded-xl overflow-hidden border-2 border-ink bg-white">
-                            <img src="image/pendidikan/plj.png" alt="Logo LP3I" class="w-full h-full object-contain p-2" loading="lazy">
+                            <img src="image/pendidikan/plj.png" alt="Logo LP3I" class="w-full h-full object-contain p-2"
+                                loading="lazy">
                         </div>
                         <div>
                             <h4 class="font-bold text-xl uppercase">Politeknik LP3I Jakarta</h4>
                             <p class="font-mono text-sm">Manajemen Informatika | 2024 - Sekarang</p>
-                            <span class="inline-block bg-acid text-ink font-bold px-2 py-1 text-xs border-2 border-ink rounded mt-2">IPK: 3.72/4.00</span>
+                            <span
+                                class="inline-block bg-acid text-ink font-bold px-2 py-1 text-xs border-2 border-ink rounded mt-2">IPK:
+                                3.72/4.00</span>
                         </div>
                     </div>
 
                     <div class="flex items-start gap-4">
                         <div class="w-16 h-16 shrink-0 rounded-xl overflow-hidden border-2 border-ink bg-white">
-                            <img src="image/pendidikan/smkn7jkt.jpeg" alt="Logo SMKN 7" class="w-full h-full object-contain" loading="lazy">
+                            <img src="image/pendidikan/smkn7jkt.jpeg" alt="Logo SMKN 7"
+                                class="w-full h-full object-contain" loading="lazy">
                         </div>
                         <div>
                             <h4 class="font-bold text-xl uppercase">SMK Negeri 7 Jakarta</h4>
                             <p class="font-mono text-sm">Teknik Komputer dan Jaringan | 2021 - 2024</p>
-                            <span class="inline-block bg-ink text-paper dark:border-paper font-bold px-2 py-1 text-xs border-2 border-ink rounded mt-2">Rata-rata Nilai: 86.01</span>
+                            <span
+                                class="inline-block bg-ink text-paper dark:border-paper font-bold px-2 py-1 text-xs border-2 border-ink rounded mt-2">Rata-rata
+                                Nilai: 86.01</span>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section class="bg-ink text-paper py-20 border-y-2 border-ink dark:border-paper overflow-hidden relative" id="skill">
+    <section class="bg-ink text-paper py-20 border-y-2 border-ink dark:border-paper overflow-hidden relative"
+        id="skill">
         <div class="absolute inset-0 bg-acid/5 bg-[length:30px_30px] bg-dot-pattern pointer-events-none"></div>
         <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-            <h2 class="font-display text-4xl md:text-5xl uppercase mb-12 text-paper glitch-hover">Hard<br><span class="text-acid">Skills</span></h2>
-            
+            <h2 class="font-display text-4xl md:text-5xl uppercase mb-12 text-paper glitch-hover">Hard<br><span
+                    class="text-acid">Skills</span></h2>
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
+
                 <!-- Kategori 1 -->
                 <div class="border-2 border-paper bg-ink/50 backdrop-blur rounded-2xl p-6 reveal-hidden">
                     <h3 class="font-mono font-bold text-acid mb-4 border-b border-paper/20 pb-2">Web Programming</h3>
@@ -245,21 +326,41 @@
                         <li>> Git, GitHub</li>
                     </ul>
                     <div class="flex flex-wrap gap-2">
-                        <img src="image/skill/html.png" alt="HTML" class="w-8 h-8 object-contain hover:scale-110 hover:-rotate-12 transition-transform" loading="lazy" onerror="this.style.display='none'">
-                        <img src="image/skill/css.png" alt="CSS" class="w-8 h-8 object-contain hover:scale-110 hover:rotate-12 transition-transform" loading="lazy" onerror="this.style.display='none'">
-                        <img src="image/skill/js.png" alt="JS" class="w-8 h-8 object-contain hover:scale-110 hover:-rotate-12 transition-transform" loading="lazy" onerror="this.style.display='none'">
-                        <img src="image/skill/php.png" alt="PHP" class="w-8 h-8 object-contain hover:scale-110 hover:rotate-12 transition-transform" loading="lazy" onerror="this.style.display='none'">
-                        <img src="image/skill/ci4.png" alt="CI4" class="w-8 h-8 object-contain hover:scale-110 hover:-rotate-12 transition-transform" loading="lazy" onerror="this.style.display='none'">
-                        <img src="image/skill/bootstrap.png" alt="Bootstrap" class="w-8 h-8 object-contain hover:scale-110 hover:rotate-12 transition-transform" loading="lazy" onerror="this.style.display='none'">
-                        <img src="image/skill/tailwind.png" alt="Tailwind" class="w-8 h-8 object-contain hover:scale-110 hover:-rotate-12 transition-transform" loading="lazy" onerror="this.style.display='none'">
-                        <img src="image/skill/git.png" alt="Git" class="w-8 h-8 object-contain hover:scale-110 hover:rotate-12 transition-transform" loading="lazy" onerror="this.style.display='none'">
-                        <img src="image/skill/github.png" alt="GitHub" class="w-8 h-8 object-contain hover:scale-110 hover:-rotate-12 transition-transform" loading="lazy" onerror="this.style.display='none'">
+                        <img src="image/skill/html.png" alt="HTML"
+                            class="w-8 h-8 object-contain hover:scale-110 hover:-rotate-12 transition-transform"
+                            loading="lazy" onerror="this.style.display='none'">
+                        <img src="image/skill/css.png" alt="CSS"
+                            class="w-8 h-8 object-contain hover:scale-110 hover:rotate-12 transition-transform"
+                            loading="lazy" onerror="this.style.display='none'">
+                        <img src="image/skill/js.png" alt="JS"
+                            class="w-8 h-8 object-contain hover:scale-110 hover:-rotate-12 transition-transform"
+                            loading="lazy" onerror="this.style.display='none'">
+                        <img src="image/skill/php.png" alt="PHP"
+                            class="w-8 h-8 object-contain hover:scale-110 hover:rotate-12 transition-transform"
+                            loading="lazy" onerror="this.style.display='none'">
+                        <img src="image/skill/ci4.png" alt="CI4"
+                            class="w-8 h-8 object-contain hover:scale-110 hover:-rotate-12 transition-transform"
+                            loading="lazy" onerror="this.style.display='none'">
+                        <img src="image/skill/bootstrap.png" alt="Bootstrap"
+                            class="w-8 h-8 object-contain hover:scale-110 hover:rotate-12 transition-transform"
+                            loading="lazy" onerror="this.style.display='none'">
+                        <img src="image/skill/tailwind.png" alt="Tailwind"
+                            class="w-8 h-8 object-contain hover:scale-110 hover:-rotate-12 transition-transform"
+                            loading="lazy" onerror="this.style.display='none'">
+                        <img src="image/skill/git.png" alt="Git"
+                            class="w-8 h-8 object-contain hover:scale-110 hover:rotate-12 transition-transform"
+                            loading="lazy" onerror="this.style.display='none'">
+                        <img src="image/skill/github.png" alt="GitHub"
+                            class="w-8 h-8 object-contain hover:scale-110 hover:-rotate-12 transition-transform"
+                            loading="lazy" onerror="this.style.display='none'">
                     </div>
                 </div>
 
                 <!-- Kategori 2 -->
-                <div class="border-2 border-paper bg-ink/50 backdrop-blur rounded-2xl p-6 reveal-hidden" data-delay="100">
-                    <h3 class="font-mono font-bold text-acid mb-4 border-b border-paper/20 pb-2">Networking & System</h3>
+                <div class="border-2 border-paper bg-ink/50 backdrop-blur rounded-2xl p-6 reveal-hidden"
+                    data-delay="100">
+                    <h3 class="font-mono font-bold text-acid mb-4 border-b border-paper/20 pb-2">Networking & System
+                    </h3>
                     <ul class="font-body text-sm space-y-2 mb-6">
                         <li>> Konfigurasi MikroTik</li>
                         <li>> Internet Gateway, DHCP Server</li>
@@ -267,13 +368,17 @@
                         <li>> Hardware Maintenance</li>
                     </ul>
                     <div class="flex flex-wrap gap-2">
-                        <img src="image/skill/mikrotik.png" alt="MikroTik" class="w-8 h-8 object-contain hover:scale-110 hover:-rotate-12 transition-transform" loading="lazy" onerror="this.style.display='none'">
+                        <img src="image/skill/mikrotik.png" alt="MikroTik"
+                            class="w-8 h-8 object-contain hover:scale-110 hover:-rotate-12 transition-transform"
+                            loading="lazy" onerror="this.style.display='none'">
                     </div>
                 </div>
 
                 <!-- Kategori 3 -->
-                <div class="border-2 border-paper bg-ink/50 backdrop-blur rounded-2xl p-6 reveal-hidden" data-delay="200">
-                    <h3 class="font-mono font-bold text-acid mb-4 border-b border-paper/20 pb-2">Software Engineering</h3>
+                <div class="border-2 border-paper bg-ink/50 backdrop-blur rounded-2xl p-6 reveal-hidden"
+                    data-delay="200">
+                    <h3 class="font-mono font-bold text-acid mb-4 border-b border-paper/20 pb-2">Software Engineering
+                    </h3>
                     <ul class="font-body text-sm space-y-2 mb-6">
                         <li>> Database (MySQL, CRUD)</li>
                         <li>> UML (Use Case, Activity Diagram)</li>
@@ -281,8 +386,12 @@
                         <li>> Java (Basic)</li>
                     </ul>
                     <div class="flex flex-wrap gap-2">
-                        <img src="image/skill/mysql.png" alt="MySQL" class="w-8 h-8 object-contain hover:scale-110 hover:rotate-12 transition-transform" loading="lazy" onerror="this.style.display='none'">
-                        <img src="image/skill/java.png" alt="Java" class="w-8 h-8 object-contain hover:scale-110 hover:-rotate-12 transition-transform" loading="lazy" onerror="this.style.display='none'">
+                        <img src="image/skill/mysql.png" alt="MySQL"
+                            class="w-8 h-8 object-contain hover:scale-110 hover:rotate-12 transition-transform"
+                            loading="lazy" onerror="this.style.display='none'">
+                        <img src="image/skill/java.png" alt="Java"
+                            class="w-8 h-8 object-contain hover:scale-110 hover:-rotate-12 transition-transform"
+                            loading="lazy" onerror="this.style.display='none'">
                     </div>
                 </div>
 
@@ -305,87 +414,135 @@
     <section class="max-w-7xl mx-auto px-4 md:px-8 py-20" id="proyek">
         <div class="flex justify-between items-center mb-8 reveal-hidden">
             <h2 class="font-display text-4xl md:text-5xl uppercase">Proyek</h2>
-            
+
             <div class="flex gap-2">
-                <button id="scroll-left" class="w-10 h-10 border-2 border-ink dark:border-paper rounded-lg bg-paper dark:bg-ink flex items-center justify-center shadow-brutal-sm hover:bg-acid dark:hover:bg-acid hover:text-ink hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none active:translate-y-1 transition-all cursor-interact" aria-label="Scroll Left">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                <button id="scroll-left"
+                    class="w-10 h-10 border-2 border-ink dark:border-paper rounded-lg bg-paper dark:bg-ink flex items-center justify-center shadow-brutal-sm hover:bg-acid dark:hover:bg-acid hover:text-ink hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none active:translate-y-1 transition-all cursor-interact"
+                    aria-label="Scroll Left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
                 </button>
-                <button id="scroll-right" class="w-10 h-10 border-2 border-ink dark:border-paper rounded-lg bg-paper dark:bg-ink flex items-center justify-center shadow-brutal-sm hover:bg-acid dark:hover:bg-acid hover:text-ink hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none active:translate-y-1 transition-all cursor-interact" aria-label="Scroll Right">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                <button id="scroll-right"
+                    class="w-10 h-10 border-2 border-ink dark:border-paper rounded-lg bg-paper dark:bg-ink flex items-center justify-center shadow-brutal-sm hover:bg-acid dark:hover:bg-acid hover:text-ink hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none active:translate-y-1 transition-all cursor-interact"
+                    aria-label="Scroll Right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
                 </button>
             </div>
         </div>
 
-        <div id="project-scroll-container" class="flex overflow-x-auto gap-8 pb-8 pt-4 px-2 -mx-2 no-scrollbar snap-x reveal-hidden" data-delay="100">
-            
+        <div id="project-scroll-container"
+            class="flex overflow-x-auto gap-8 pb-8 pt-4 px-2 -mx-2 no-scrollbar snap-x reveal-hidden" data-delay="100">
+
             <!-- Project 1 -->
-            <div class="w-[320px] md:w-[380px] shrink-0 border-2 border-ink dark:border-paper rounded-2xl bg-paper dark:bg-ink shadow-brutal-lg p-4 group snap-center cursor-none hover:-translate-y-2 transition-transform duration-300">
-                <div class="aspect-video border-2 border-ink dark:border-paper rounded-xl overflow-hidden bg-ink mb-4 relative">
-                    <span class="absolute top-2 left-2 bg-acid text-ink font-mono text-xs font-bold px-2 py-1 rounded-sm border-2 border-ink z-10">FULLSTACK</span>
-                    <img src="image/project/readonl1ne.png" alt="ReadOnl1ne" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.src='https://placehold.co/600x338/09090b/d2e823?text=READONL1NE'">
+            <div
+                class="w-[320px] md:w-[380px] shrink-0 border-2 border-ink dark:border-paper rounded-2xl bg-paper dark:bg-ink shadow-brutal-lg p-4 group snap-center cursor-none hover:-translate-y-2 transition-transform duration-300">
+                <div
+                    class="aspect-video border-2 border-ink dark:border-paper rounded-xl overflow-hidden bg-ink mb-4 relative">
+                    <span
+                        class="absolute top-2 left-2 bg-acid text-ink font-mono text-xs font-bold px-2 py-1 rounded-sm border-2 border-ink z-10">FULLSTACK</span>
+                    <img src="image/project/readonl1ne.png" alt="ReadOnl1ne"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy" onerror="this.src='https://placehold.co/600x338/09090b/d2e823?text=READONL1NE'">
                 </div>
                 <div class="flex justify-between items-start mb-2">
                     <h4 class="font-display uppercase text-xl line-clamp-1">ReadOnl1ne</h4>
-                    <span class="font-mono font-bold bg-ink dark:bg-paper text-paper dark:text-ink px-2 py-1 rounded-md text-xs border-2 border-transparent dark:border-paper shrink-0">CI4 & MySQL</span>
+                    <span
+                        class="font-mono font-bold bg-ink dark:bg-paper text-paper dark:text-ink px-2 py-1 rounded-md text-xs border-2 border-transparent dark:border-paper shrink-0">CI4
+                        & MySQL</span>
                 </div>
-                <p class="font-body text-sm opacity-80 mb-4 h-20 overflow-y-auto no-scrollbar">E-commerce buku digital dengan MVC. Fitur autentikasi, katalog, pencarian, dan dashboard admin. Dibuat Sep 2025 - Jan 2026. Desain UI di Figma, dokumen UML & ERD lengkap.</p>
-                <button class="w-full hard-btn bg-paper dark:bg-ink border-2 border-ink dark:border-paper py-2 rounded-lg font-bold shadow-brutal-sm hover:bg-acid dark:hover:bg-acid dark:hover:text-ink hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-interact text-sm uppercase">
+                <p class="font-body text-sm opacity-80 mb-4 h-20 overflow-y-auto no-scrollbar">E-commerce buku digital
+                    dengan MVC. Fitur autentikasi, katalog, pencarian, dan dashboard admin. Dibuat Sep 2025 - Jan 2026.
+                    Desain UI di Figma, dokumen UML & ERD lengkap.</p>
+                <button
+                    class="w-full hard-btn bg-paper dark:bg-ink border-2 border-ink dark:border-paper py-2 rounded-lg font-bold shadow-brutal-sm hover:bg-acid dark:hover:bg-acid dark:hover:text-ink hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-interact text-sm uppercase">
                     Detail Proyek
                 </button>
             </div>
 
             <!-- Project 2 -->
-            <div class="w-[320px] md:w-[380px] shrink-0 border-2 border-ink dark:border-paper rounded-2xl bg-paper dark:bg-ink shadow-brutal-lg p-4 group snap-center cursor-none hover:-translate-y-2 transition-transform duration-300">
-                <div class="aspect-video border-2 border-ink dark:border-paper rounded-xl overflow-hidden bg-ink mb-4 relative">
-                    <img src="image/project/e-warkas.png" alt="E-Warkas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.src='https://placehold.co/600x338/09090b/f8f4e8?text=E-WARKAS'">
+            <div
+                class="w-[320px] md:w-[380px] shrink-0 border-2 border-ink dark:border-paper rounded-2xl bg-paper dark:bg-ink shadow-brutal-lg p-4 group snap-center cursor-none hover:-translate-y-2 transition-transform duration-300">
+                <div
+                    class="aspect-video border-2 border-ink dark:border-paper rounded-xl overflow-hidden bg-ink mb-4 relative">
+                    <img src="image/project/e-warkas.png" alt="E-Warkas"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy" onerror="this.src='https://placehold.co/600x338/09090b/f8f4e8?text=E-WARKAS'">
                 </div>
                 <div class="flex justify-between items-start mb-2">
                     <h4 class="font-display uppercase text-xl line-clamp-1">E-Warkas</h4>
                 </div>
-                <p class="font-body text-sm opacity-80 mb-4 h-20 overflow-y-auto no-scrollbar">[Placeholder: Deskripsi singkat tentang proyek E-Warkas. Teknologi yang digunakan dan peran dalam pengembangan.]</p>
-                <button class="w-full hard-btn bg-paper dark:bg-ink border-2 border-ink dark:border-paper py-2 rounded-lg font-bold shadow-brutal-sm hover:bg-acid dark:hover:bg-acid dark:hover:text-ink hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-interact text-sm uppercase">
+                <p class="font-body text-sm opacity-80 mb-4 h-20 overflow-y-auto no-scrollbar">[Placeholder: Deskripsi
+                    singkat tentang proyek E-Warkas. Teknologi yang digunakan dan peran dalam pengembangan.]</p>
+                <button
+                    class="w-full hard-btn bg-paper dark:bg-ink border-2 border-ink dark:border-paper py-2 rounded-lg font-bold shadow-brutal-sm hover:bg-acid dark:hover:bg-acid dark:hover:text-ink hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-interact text-sm uppercase">
                     Detail Proyek
                 </button>
             </div>
 
             <!-- Project 3 -->
-            <div class="w-[320px] md:w-[380px] shrink-0 border-2 border-ink dark:border-paper rounded-2xl bg-paper dark:bg-ink shadow-brutal-lg p-4 group snap-center cursor-none hover:-translate-y-2 transition-transform duration-300">
-                <div class="aspect-video border-2 border-ink dark:border-paper rounded-xl overflow-hidden bg-ink mb-4 relative">
-                    <img src="image/project/fams.png" alt="FAMS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.src='https://placehold.co/600x338/09090b/f8f4e8?text=FAMS'">
+            <div
+                class="w-[320px] md:w-[380px] shrink-0 border-2 border-ink dark:border-paper rounded-2xl bg-paper dark:bg-ink shadow-brutal-lg p-4 group snap-center cursor-none hover:-translate-y-2 transition-transform duration-300">
+                <div
+                    class="aspect-video border-2 border-ink dark:border-paper rounded-xl overflow-hidden bg-ink mb-4 relative">
+                    <img src="image/project/fams.png" alt="FAMS"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy" onerror="this.src='https://placehold.co/600x338/09090b/f8f4e8?text=FAMS'">
                 </div>
                 <div class="flex justify-between items-start mb-2">
                     <h4 class="font-display uppercase text-xl line-clamp-1">FAMS</h4>
                 </div>
-                <p class="font-body text-sm opacity-80 mb-4 h-20 overflow-y-auto no-scrollbar">[Placeholder: Sistem FAMS (Fixed Asset Management System?). Modul utama dan penyelesaian masalah.]</p>
-                <button class="w-full hard-btn bg-paper dark:bg-ink border-2 border-ink dark:border-paper py-2 rounded-lg font-bold shadow-brutal-sm hover:bg-acid dark:hover:bg-acid dark:hover:text-ink hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-interact text-sm uppercase">
+                <p class="font-body text-sm opacity-80 mb-4 h-20 overflow-y-auto no-scrollbar">[Placeholder: Sistem FAMS
+                    (Fixed Asset Management System?). Modul utama dan penyelesaian masalah.]</p>
+                <button
+                    class="w-full hard-btn bg-paper dark:bg-ink border-2 border-ink dark:border-paper py-2 rounded-lg font-bold shadow-brutal-sm hover:bg-acid dark:hover:bg-acid dark:hover:text-ink hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-interact text-sm uppercase">
                     Detail Proyek
                 </button>
             </div>
 
             <!-- Project 4 -->
-            <div class="w-[320px] md:w-[380px] shrink-0 border-2 border-ink dark:border-paper rounded-2xl bg-paper dark:bg-ink shadow-brutal-lg p-4 group snap-center cursor-none hover:-translate-y-2 transition-transform duration-300">
-                <div class="aspect-video border-2 border-ink dark:border-paper rounded-xl overflow-hidden bg-ink mb-4 relative">
-                    <img src="image/project/apotek_berkat.png" alt="Apotek Berkat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.src='https://placehold.co/600x338/09090b/f8f4e8?text=APOTEK+BERKAT'">
+            <div
+                class="w-[320px] md:w-[380px] shrink-0 border-2 border-ink dark:border-paper rounded-2xl bg-paper dark:bg-ink shadow-brutal-lg p-4 group snap-center cursor-none hover:-translate-y-2 transition-transform duration-300">
+                <div
+                    class="aspect-video border-2 border-ink dark:border-paper rounded-xl overflow-hidden bg-ink mb-4 relative">
+                    <img src="image/project/apotek_berkat.png" alt="Apotek Berkat"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                        onerror="this.src='https://placehold.co/600x338/09090b/f8f4e8?text=APOTEK+BERKAT'">
                 </div>
                 <div class="flex justify-between items-start mb-2">
                     <h4 class="font-display uppercase text-xl line-clamp-1">Apotek Berkat</h4>
                 </div>
-                <p class="font-body text-sm opacity-80 mb-4 h-20 overflow-y-auto no-scrollbar">[Placeholder: Aplikasi sistem informasi atau penjualan untuk Apotek Berkat. Fitur inventaris dan kasir.]</p>
-                <button class="w-full hard-btn bg-paper dark:bg-ink border-2 border-ink dark:border-paper py-2 rounded-lg font-bold shadow-brutal-sm hover:bg-acid dark:hover:bg-acid dark:hover:text-ink hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-interact text-sm uppercase">
+                <p class="font-body text-sm opacity-80 mb-4 h-20 overflow-y-auto no-scrollbar">[Placeholder: Aplikasi
+                    sistem informasi atau penjualan untuk Apotek Berkat. Fitur inventaris dan kasir.]</p>
+                <button
+                    class="w-full hard-btn bg-paper dark:bg-ink border-2 border-ink dark:border-paper py-2 rounded-lg font-bold shadow-brutal-sm hover:bg-acid dark:hover:bg-acid dark:hover:text-ink hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-interact text-sm uppercase">
                     Detail Proyek
                 </button>
             </div>
 
             <!-- Project 5 -->
-            <div class="w-[320px] md:w-[380px] shrink-0 border-2 border-ink dark:border-paper rounded-2xl bg-paper dark:bg-ink shadow-brutal-lg p-4 group snap-center cursor-none hover:-translate-y-2 transition-transform duration-300">
-                <div class="aspect-video border-2 border-ink dark:border-paper rounded-xl overflow-hidden bg-ink mb-4 relative">
-                    <img src="image/project/undangankhitan.png" alt="Undangan Khitan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.src='https://placehold.co/600x338/09090b/f8f4e8?text=UNDANGAN'">
+            <div
+                class="w-[320px] md:w-[380px] shrink-0 border-2 border-ink dark:border-paper rounded-2xl bg-paper dark:bg-ink shadow-brutal-lg p-4 group snap-center cursor-none hover:-translate-y-2 transition-transform duration-300">
+                <div
+                    class="aspect-video border-2 border-ink dark:border-paper rounded-xl overflow-hidden bg-ink mb-4 relative">
+                    <img src="image/project/undangankhitan.png" alt="Undangan Khitan"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy" onerror="this.src='https://placehold.co/600x338/09090b/f8f4e8?text=UNDANGAN'">
                 </div>
                 <div class="flex justify-between items-start mb-2">
                     <h4 class="font-display uppercase text-xl line-clamp-1">Undangan Khitan</h4>
                 </div>
-                <p class="font-body text-sm opacity-80 mb-4 h-20 overflow-y-auto no-scrollbar">[Placeholder: Website undangan digital interaktif. Desain UI/UX dan animasi yang digunakan.]</p>
-                <button class="w-full hard-btn bg-paper dark:bg-ink border-2 border-ink dark:border-paper py-2 rounded-lg font-bold shadow-brutal-sm hover:bg-acid dark:hover:bg-acid dark:hover:text-ink hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-interact text-sm uppercase">
+                <p class="font-body text-sm opacity-80 mb-4 h-20 overflow-y-auto no-scrollbar">[Placeholder: Website
+                    undangan digital interaktif. Desain UI/UX dan animasi yang digunakan.]</p>
+                <button
+                    class="w-full hard-btn bg-paper dark:bg-ink border-2 border-ink dark:border-paper py-2 rounded-lg font-bold shadow-brutal-sm hover:bg-acid dark:hover:bg-acid dark:hover:text-ink hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none cursor-interact text-sm uppercase">
                     Detail Proyek
                 </button>
             </div>
@@ -395,20 +552,26 @@
 
     <!-- Experience Timeline -->
     <section class="max-w-4xl mx-auto px-4 md:px-8 py-20" id="pengalaman">
-        <h2 class="font-display text-4xl md:text-5xl uppercase mb-16 text-center glitch-hover reveal-hidden">Pengalaman</h2>
-        
+        <h2 class="font-display text-4xl md:text-5xl uppercase mb-16 text-center glitch-hover reveal-hidden">Pengalaman
+        </h2>
+
         <div class="relative border-l-4 border-ink dark:border-paper ml-4 md:ml-8 space-y-16 py-8">
-            
+
             <!-- Item 1 -->
             <div class="relative pl-8 md:pl-12 reveal-hidden" data-delay="0">
-                <div class="absolute w-8 h-8 bg-acid border-4 border-ink dark:border-paper rounded-full -left-[18px] top-0 shadow-brutal-sm"></div>
-                <div class="bg-paper dark:bg-ink border-2 border-ink dark:border-paper rounded-2xl p-6 shadow-brutal-md group hover:translate-x-2 transition-transform">
+                <div
+                    class="absolute w-8 h-8 bg-acid border-4 border-ink dark:border-paper rounded-full -left-[18px] top-0 shadow-brutal-sm">
+                </div>
+                <div
+                    class="bg-paper dark:bg-ink border-2 border-ink dark:border-paper rounded-2xl p-6 shadow-brutal-md group hover:translate-x-2 transition-transform">
                     <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-4 gap-2">
                         <h3 class="font-display text-2xl uppercase">Junior System Engineer</h3>
-                        <span class="font-mono text-sm bg-ink text-paper dark:border-paper px-2 py-1 rounded border-2 border-ink font-bold shrink-0">Des 2022 - Apr 2023</span>
+                        <span
+                            class="font-mono text-sm bg-ink text-paper dark:border-paper px-2 py-1 rounded border-2 border-ink font-bold shrink-0">Des
+                            2022 - Apr 2023</span>
                     </div>
                     <h4 class="font-bold text-lg mb-4 opacity-80">PT IP Network Solusindo (PKL)</h4>
-                    
+
                     <div class="flex flex-col md:flex-row gap-6">
                         <div class="flex-1">
                             <ul class="font-body text-sm space-y-2 list-disc list-inside">
@@ -418,8 +581,11 @@
                                 <li>Dokumentasi (capture) untuk Quality Control standar perusahaan.</li>
                             </ul>
                         </div>
-                        <div class="w-full md:w-48 aspect-video md:aspect-square border-2 border-ink rounded-lg overflow-hidden shrink-0">
-                            <img src="image/pkl/PT IP Network Solusindo/PT IP Network Solusindo.jpg" alt="PKL Telkomsel" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" loading="lazy" onerror="this.src='https://placehold.co/400?text=PKL+SERVER'">
+                        <div
+                            class="w-full md:w-48 aspect-video md:aspect-square border-2 border-ink rounded-lg overflow-hidden shrink-0">
+                            <img src="image/pkl/PT IP Network Solusindo/PT IP Network Solusindo.jpg" alt="PKL Telkomsel"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                                loading="lazy" onerror="this.src='https://placehold.co/400?text=PKL+SERVER'">
                         </div>
                     </div>
                 </div>
@@ -427,14 +593,19 @@
 
             <!-- Item 2 -->
             <div class="relative pl-8 md:pl-12 reveal-hidden" data-delay="100">
-                <div class="absolute w-8 h-8 bg-paper border-4 border-ink dark:border-paper rounded-full -left-[18px] top-0 shadow-brutal-sm"></div>
-                <div class="bg-paper dark:bg-ink border-2 border-ink dark:border-paper rounded-2xl p-6 shadow-brutal-md group hover:translate-x-2 transition-transform">
+                <div
+                    class="absolute w-8 h-8 bg-paper border-4 border-ink dark:border-paper rounded-full -left-[18px] top-0 shadow-brutal-sm">
+                </div>
+                <div
+                    class="bg-paper dark:bg-ink border-2 border-ink dark:border-paper rounded-2xl p-6 shadow-brutal-md group hover:translate-x-2 transition-transform">
                     <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-4 gap-2">
                         <h3 class="font-display text-2xl uppercase">Staff IT</h3>
-                        <span class="font-mono text-sm bg-ink text-paper dark:border-paper px-2 py-1 rounded border-2 border-ink font-bold shrink-0">Sep 2022 - Des 2022</span>
+                        <span
+                            class="font-mono text-sm bg-ink text-paper dark:border-paper px-2 py-1 rounded border-2 border-ink font-bold shrink-0">Sep
+                            2022 - Des 2022</span>
                     </div>
                     <h4 class="font-bold text-lg mb-4 opacity-80">Madina Islamic School (PKL)</h4>
-                    
+
                     <div class="flex flex-col md:flex-row gap-6">
                         <div class="flex-1">
                             <ul class="font-body text-sm space-y-2 list-disc list-inside">
@@ -444,23 +615,32 @@
                                 <li>Dokumentasi fotografi untuk acara sekolah.</li>
                             </ul>
                         </div>
-                        <div class="w-full md:w-48 aspect-video md:aspect-square border-2 border-ink rounded-lg overflow-hidden shrink-0">
-                            <img src="image/pkl/Madina Islamic School/1.jpeg" alt="PKL Madina" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" loading="lazy" onerror="this.src='https://placehold.co/400?text=PKL+MADINA'">
+                        <div
+                            class="w-full md:w-48 aspect-video md:aspect-square border-2 border-ink rounded-lg overflow-hidden shrink-0">
+                            <img src="image/pkl/Madina Islamic School/1.jpeg" alt="PKL Madina"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                                loading="lazy" onerror="this.src='https://placehold.co/400?text=PKL+MADINA'">
                         </div>
                     </div>
                 </div>
             </div>
 
-             <!-- Item 3 -->
-             <div class="relative pl-8 md:pl-12 reveal-hidden" data-delay="200">
-                <div class="absolute w-8 h-8 bg-paper border-4 border-ink dark:border-paper rounded-full -left-[18px] top-0 shadow-brutal-sm"></div>
-                <div class="bg-paper dark:bg-ink border-2 border-ink dark:border-paper rounded-2xl p-6 shadow-brutal-md group hover:translate-x-2 transition-transform">
+            <!-- Item 3 -->
+            <div class="relative pl-8 md:pl-12 reveal-hidden" data-delay="200">
+                <div
+                    class="absolute w-8 h-8 bg-paper border-4 border-ink dark:border-paper rounded-full -left-[18px] top-0 shadow-brutal-sm">
+                </div>
+                <div
+                    class="bg-paper dark:bg-ink border-2 border-ink dark:border-paper rounded-2xl p-6 shadow-brutal-md group hover:translate-x-2 transition-transform">
                     <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-4 gap-2">
                         <h3 class="font-display text-2xl uppercase">Web Developer</h3>
-                        <span class="font-mono text-sm bg-ink text-paper dark:border-paper px-2 py-1 rounded border-2 border-ink font-bold shrink-0">Sep 2025 - Jan 2026</span>
+                        <span
+                            class="font-mono text-sm bg-ink text-paper dark:border-paper px-2 py-1 rounded border-2 border-ink font-bold shrink-0">Sep
+                            2025 - Jan 2026</span>
                     </div>
                     <h4 class="font-bold text-lg mb-4 opacity-80">Proyek ReadOnl1ne</h4>
-                    <p class="font-body text-sm">Mengembangkan aplikasi web e-commerce buku digital. Merancang database, membuat dokumentasi sistem, mendesain UI/UX, dan menulis kode aplikasi (Fullstack CI4).</p>
+                    <p class="font-body text-sm">Mengembangkan aplikasi web e-commerce buku digital. Merancang database,
+                        membuat dokumentasi sistem, mendesain UI/UX, dan menulis kode aplikasi (Fullstack CI4).</p>
                 </div>
             </div>
 
@@ -468,15 +648,21 @@
     </section>
 
     <!-- Sertifikat & Organisasi -->
-    <section class="bg-acid text-ink py-20 border-y-2 border-ink dark:border-paper relative overflow-hidden" id="sertifikat">
+    <section class="bg-acid text-ink py-20 border-y-2 border-ink dark:border-paper relative overflow-hidden"
+        id="sertifikat">
         <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
             <h2 class="font-display text-4xl md:text-5xl uppercase mb-12 glitch-hover">Sertifikasi BNSP</h2>
-            
+
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-20">
                 <!-- Cert 1 -->
-                <div class="bg-paper border-2 border-ink rounded-xl p-6 shadow-brutal-lg flex flex-col justify-between relative overflow-hidden reveal-hidden" data-delay="0">
-                    <div class="absolute w-6 h-6 bg-acid rounded-full -left-3 top-1/2 -translate-y-1/2 border-r-2 border-ink"></div>
-                    <div class="absolute w-6 h-6 bg-acid rounded-full -right-3 top-1/2 -translate-y-1/2 border-l-2 border-ink"></div>
+                <div class="bg-paper border-2 border-ink rounded-xl p-6 shadow-brutal-lg flex flex-col justify-between relative overflow-hidden reveal-hidden"
+                    data-delay="0">
+                    <div
+                        class="absolute w-6 h-6 bg-acid rounded-full -left-3 top-1/2 -translate-y-1/2 border-r-2 border-ink">
+                    </div>
+                    <div
+                        class="absolute w-6 h-6 bg-acid rounded-full -right-3 top-1/2 -translate-y-1/2 border-l-2 border-ink">
+                    </div>
                     <div>
                         <div class="flex justify-between items-start mb-4">
                             <span class="font-mono text-xs font-bold border-2 border-ink px-2 py-1 rounded">2026</span>
@@ -489,15 +675,21 @@
                             <li>> Optimasi query SQL.</li>
                         </ul>
                     </div>
-                    <div class="pt-4 border-t-2 border-dashed border-ink/30 mt-auto font-mono text-[10px] text-center uppercase">
+                    <div
+                        class="pt-4 border-t-2 border-dashed border-ink/30 mt-auto font-mono text-[10px] text-center uppercase">
                         CERT // 001 // VALID
                     </div>
                 </div>
 
                 <!-- Cert 2 -->
-                <div class="bg-paper border-2 border-ink rounded-xl p-6 shadow-brutal-lg flex flex-col justify-between relative overflow-hidden reveal-hidden" data-delay="100">
-                    <div class="absolute w-6 h-6 bg-acid rounded-full -left-3 top-1/2 -translate-y-1/2 border-r-2 border-ink"></div>
-                    <div class="absolute w-6 h-6 bg-acid rounded-full -right-3 top-1/2 -translate-y-1/2 border-l-2 border-ink"></div>
+                <div class="bg-paper border-2 border-ink rounded-xl p-6 shadow-brutal-lg flex flex-col justify-between relative overflow-hidden reveal-hidden"
+                    data-delay="100">
+                    <div
+                        class="absolute w-6 h-6 bg-acid rounded-full -left-3 top-1/2 -translate-y-1/2 border-r-2 border-ink">
+                    </div>
+                    <div
+                        class="absolute w-6 h-6 bg-acid rounded-full -right-3 top-1/2 -translate-y-1/2 border-l-2 border-ink">
+                    </div>
                     <div>
                         <div class="flex justify-between items-start mb-4">
                             <span class="font-mono text-xs font-bold border-2 border-ink px-2 py-1 rounded">2025</span>
@@ -510,15 +702,21 @@
                             <li>> MS PowerPoint (Animasi presentasi).</li>
                         </ul>
                     </div>
-                    <div class="pt-4 border-t-2 border-dashed border-ink/30 mt-auto font-mono text-[10px] text-center uppercase">
+                    <div
+                        class="pt-4 border-t-2 border-dashed border-ink/30 mt-auto font-mono text-[10px] text-center uppercase">
                         CERT // 002 // VALID
                     </div>
                 </div>
 
                 <!-- Cert 3 -->
-                <div class="bg-paper border-2 border-ink rounded-xl p-6 shadow-brutal-lg flex flex-col justify-between relative overflow-hidden reveal-hidden" data-delay="200">
-                    <div class="absolute w-6 h-6 bg-acid rounded-full -left-3 top-1/2 -translate-y-1/2 border-r-2 border-ink"></div>
-                    <div class="absolute w-6 h-6 bg-acid rounded-full -right-3 top-1/2 -translate-y-1/2 border-l-2 border-ink"></div>
+                <div class="bg-paper border-2 border-ink rounded-xl p-6 shadow-brutal-lg flex flex-col justify-between relative overflow-hidden reveal-hidden"
+                    data-delay="200">
+                    <div
+                        class="absolute w-6 h-6 bg-acid rounded-full -left-3 top-1/2 -translate-y-1/2 border-r-2 border-ink">
+                    </div>
+                    <div
+                        class="absolute w-6 h-6 bg-acid rounded-full -right-3 top-1/2 -translate-y-1/2 border-l-2 border-ink">
+                    </div>
                     <div>
                         <div class="flex justify-between items-start mb-4">
                             <span class="font-mono text-xs font-bold border-2 border-ink px-2 py-1 rounded">2024</span>
@@ -531,7 +729,8 @@
                             <li>> Crimping kabel UTP standar.</li>
                         </ul>
                     </div>
-                    <div class="pt-4 border-t-2 border-dashed border-ink/30 mt-auto font-mono text-[10px] text-center uppercase">
+                    <div
+                        class="pt-4 border-t-2 border-dashed border-ink/30 mt-auto font-mono text-[10px] text-center uppercase">
                         CERT // 003 // VALID
                     </div>
                 </div>
@@ -540,25 +739,33 @@
             <!-- Organisasi -->
             <h2 class="font-display text-4xl md:text-5xl uppercase mb-12 glitch-hover text-right">Organisasi</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 reveal-hidden">
-                <div class="bg-ink text-paper border-2 border-ink rounded-2xl p-6 shadow-[4px_4px_0px_0px_#F8F4E8] flex items-center gap-6 group hover:translate-y-1 hover:translate-x-1 hover:shadow-none transition-all">
-                    <div class="w-20 h-20 bg-paper rounded-full border-2 border-ink shrink-0 overflow-hidden flex items-center justify-center p-2">
-                        <img src="image/organisasi/LCC/lcc.png" alt="LCC" class="w-full h-full object-contain" loading="lazy" onerror="this.src='https://placehold.co/100?text=LCC'">
+                <div
+                    class="bg-ink text-paper border-2 border-ink rounded-2xl p-6 shadow-[4px_4px_0px_0px_#F8F4E8] flex items-center gap-6 group hover:translate-y-1 hover:translate-x-1 hover:shadow-none transition-all">
+                    <div
+                        class="w-20 h-20 bg-paper rounded-full border-2 border-ink shrink-0 overflow-hidden flex items-center justify-center p-2">
+                        <img src="image/organisasi/LCC/lcc.png" alt="LCC" class="w-full h-full object-contain"
+                            loading="lazy" onerror="this.src='https://placehold.co/100?text=LCC'">
                     </div>
                     <div>
                         <h4 class="font-bold text-xl uppercase mb-1 text-acid">Bendahara</h4>
                         <p class="font-mono text-sm opacity-80 mb-2">LP3I Computer Club (LCC)</p>
-                        <p class="font-body text-sm">Bertanggung jawab melakukan rekapitulasi kas masuk dan keluar organisasi.</p>
+                        <p class="font-body text-sm">Bertanggung jawab melakukan rekapitulasi kas masuk dan keluar
+                            organisasi.</p>
                     </div>
                 </div>
 
-                <div class="bg-ink text-paper border-2 border-ink rounded-2xl p-6 shadow-[4px_4px_0px_0px_#F8F4E8] flex items-center gap-6 group hover:translate-y-1 hover:translate-x-1 hover:shadow-none transition-all">
-                    <div class="w-20 h-20 bg-paper rounded-full border-2 border-ink shrink-0 overflow-hidden flex items-center justify-center p-2">
-                        <img src="image/organisasi/Kamil/kamil.png" alt="KAMIL" class="w-full h-full object-contain" loading="lazy" onerror="this.src='https://placehold.co/100?text=KAMIL'">
+                <div
+                    class="bg-ink text-paper border-2 border-ink rounded-2xl p-6 shadow-[4px_4px_0px_0px_#F8F4E8] flex items-center gap-6 group hover:translate-y-1 hover:translate-x-1 hover:shadow-none transition-all">
+                    <div
+                        class="w-20 h-20 bg-paper rounded-full border-2 border-ink shrink-0 overflow-hidden flex items-center justify-center p-2">
+                        <img src="image/organisasi/Kamil/kamil.png" alt="KAMIL" class="w-full h-full object-contain"
+                            loading="lazy" onerror="this.src='https://placehold.co/100?text=KAMIL'">
                     </div>
                     <div>
                         <h4 class="font-bold text-xl uppercase mb-1 text-acid">Humas</h4>
                         <p class="font-mono text-sm opacity-80 mb-2">Kesatuan Mahasiswa Islam LP3I</p>
-                        <p class="font-body text-sm">Melakukan dokumentasi kegiatan dan menyebarkan informasi ke mahasiswa.</p>
+                        <p class="font-body text-sm">Melakukan dokumentasi kegiatan dan menyebarkan informasi ke
+                            mahasiswa.</p>
                     </div>
                 </div>
             </div>
@@ -570,69 +777,100 @@
         <h2 class="font-display text-4xl md:text-5xl uppercase mb-12 glitch-hover reveal-hidden">Galeri Kegiatan</h2>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px] reveal-hidden">
             <!-- Galeri placeholder items, since images might not exist yet -->
-            <div class="gallery-item col-span-2 row-span-2 border-2 border-ink dark:border-paper rounded-2xl overflow-hidden cursor-interact group">
-                <img src="image/penelitian_tdsm/1.JPG" alt="TDSM 1" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" loading="lazy" onerror="this.src='https://placehold.co/800?text=TDSM+1'">
+            <div
+                class="gallery-item col-span-2 row-span-2 border-2 border-ink dark:border-paper rounded-2xl overflow-hidden cursor-interact group">
+                <img src="image/penelitian_tdsm/1.JPG" alt="TDSM 1"
+                    class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    loading="lazy" onerror="this.src='https://placehold.co/800?text=TDSM+1'">
             </div>
-            <div class="gallery-item border-2 border-ink dark:border-paper rounded-2xl overflow-hidden cursor-interact group">
-                <img src="image/penelitian_tdsm/2.JPG" alt="TDSM 2" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" loading="lazy" onerror="this.src='https://placehold.co/400?text=TDSM+2'">
+            <div
+                class="gallery-item border-2 border-ink dark:border-paper rounded-2xl overflow-hidden cursor-interact group">
+                <img src="image/penelitian_tdsm/2.JPG" alt="TDSM 2"
+                    class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    loading="lazy" onerror="this.src='https://placehold.co/400?text=TDSM+2'">
             </div>
-            <div class="gallery-item border-2 border-ink dark:border-paper rounded-2xl overflow-hidden cursor-interact group">
-                <img src="image/pkl/PT IP Network Solusindo/labeling.jpg" alt="PKL" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" loading="lazy" onerror="this.src='https://placehold.co/400?text=PKL'">
+            <div
+                class="gallery-item border-2 border-ink dark:border-paper rounded-2xl overflow-hidden cursor-interact group">
+                <img src="image/pkl/PT IP Network Solusindo/labeling.jpg" alt="PKL"
+                    class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    loading="lazy" onerror="this.src='https://placehold.co/400?text=PKL'">
             </div>
-             <div class="gallery-item col-span-2 border-2 border-ink dark:border-paper rounded-2xl overflow-hidden cursor-interact group">
-                <img src="image/penelitian_tdsm/3.jpg" alt="TDSM 3" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" loading="lazy" onerror="this.src='https://placehold.co/800x400?text=TDSM+3'">
+            <div
+                class="gallery-item col-span-2 border-2 border-ink dark:border-paper rounded-2xl overflow-hidden cursor-interact group">
+                <img src="image/penelitian_tdsm/3.jpg" alt="TDSM 3"
+                    class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    loading="lazy" onerror="this.src='https://placehold.co/800x400?text=TDSM+3'">
             </div>
         </div>
     </section>
 
     <!-- Gallery Modal -->
-    <div id="gallery-modal" class="fixed inset-0 bg-ink/90 backdrop-blur-sm z-[20000] hidden items-center justify-center p-4 opacity-0 transition-opacity duration-300 [&.flex]:opacity-100">
-        <button id="modal-close" class="absolute top-6 right-6 w-12 h-12 bg-acid border-2 border-ink rounded-full text-ink font-bold flex items-center justify-center hover:scale-110 transition-transform cursor-interact text-xl">✕</button>
+    <div id="gallery-modal"
+        class="fixed inset-0 bg-ink/90 backdrop-blur-sm z-[20000] hidden items-center justify-center p-4 opacity-0 transition-opacity duration-300 [&.flex]:opacity-100">
+        <button id="modal-close"
+            class="absolute top-6 right-6 w-12 h-12 bg-acid border-2 border-ink rounded-full text-ink font-bold flex items-center justify-center hover:scale-110 transition-transform cursor-interact text-xl">✕</button>
         <div class="w-full max-w-5xl aspect-video border-4 border-paper rounded-lg overflow-hidden bg-ink p-2">
-             <img id="modal-img" src="" alt="Fullscreen" class="w-full h-full object-contain">
+            <img id="modal-img" src="" alt="Fullscreen" class="w-full h-full object-contain">
         </div>
     </div>
 
     <!-- Footer / Kontak -->
     <footer class="bg-ink text-paper pt-20 pb-10 px-4 md:px-8 mt-20 relative overflow-hidden" id="kontak">
         <!-- Abstract shape -->
-        <div class="absolute -top-40 -right-40 w-96 h-96 bg-acid rounded-full opacity-5 blur-3xl pointer-events-none"></div>
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-acid rounded-full opacity-5 blur-3xl pointer-events-none">
+        </div>
 
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 justify-between mb-16 relative z-10 reveal-hidden">
-            
+        <div
+            class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 justify-between mb-16 relative z-10 reveal-hidden">
+
             <div class="max-w-md">
                 <h2 class="font-display text-4xl uppercase tracking-tighter text-paper mb-6">
                     Mulai<br><span class="text-acid">Proyek Baru?</span>
                 </h2>
                 <p class="font-body text-paper/80 mb-8">
-                    Terbuka untuk kesempatan kerja full-time, part-time, atau proyek freelance. Mari diskusikan kebutuhan infrastruktur atau aplikasi Anda.
+                    Terbuka untuk kesempatan kerja full-time, part-time, atau proyek freelance. Mari diskusikan
+                    kebutuhan infrastruktur atau aplikasi Anda.
                 </p>
-                
+
                 <div class="flex items-center gap-3 bg-paper/10 p-2 rounded-xl border-2 border-paper/20 w-fit">
                     <span class="font-mono text-sm px-4">ndiksptr159@gmail.com</span>
-                    <button id="copy-email-btn" class="hard-btn bg-paper text-ink font-bold font-mono text-xs px-4 py-2 rounded-lg hover:bg-acid transition-colors cursor-interact">
+                    <button id="copy-email-btn"
+                        class="hard-btn bg-paper text-ink font-bold font-mono text-xs px-4 py-2 rounded-lg hover:bg-acid transition-colors cursor-interact">
                         SALIN
                     </button>
                 </div>
             </div>
 
             <div class="flex flex-col md:text-right">
-                <span class="font-mono text-xs text-acid font-bold border-b border-paper/20 pb-2 mb-4 uppercase tracking-widest">Jejak Digital</span>
+                <span
+                    class="font-mono text-xs text-acid font-bold border-b border-paper/20 pb-2 mb-4 uppercase tracking-widest">Jejak
+                    Digital</span>
                 <nav class="flex flex-col gap-4">
-                    <a href="https://github.com/ndiksptr" target="_blank" rel="noopener noreferrer" class="font-display uppercase tracking-wide text-2xl text-paper hover:text-acid hover:-translate-x-2 transition-all cursor-interact flex items-center md:justify-end gap-3">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
+                    <a href="https://github.com/ndiksptr" target="_blank" rel="noopener noreferrer"
+                        class="font-display uppercase tracking-wide text-2xl text-paper hover:text-acid hover:-translate-x-2 transition-all cursor-interact flex items-center md:justify-end gap-3">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                clip-rule="evenodd"></path>
+                        </svg>
                         GitHub
                     </a>
-                    <a href="https://www.linkedin.com/in/ndik15" target="_blank" rel="noopener noreferrer" class="font-display uppercase tracking-wide text-2xl text-paper hover:text-acid hover:-translate-x-2 transition-all cursor-interact flex items-center md:justify-end gap-3">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"></path></svg>
+                    <a href="https://www.linkedin.com/in/ndik15" target="_blank" rel="noopener noreferrer"
+                        class="font-display uppercase tracking-wide text-2xl text-paper hover:text-acid hover:-translate-x-2 transition-all cursor-interact flex items-center md:justify-end gap-3">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                                clip-rule="evenodd"></path>
+                        </svg>
                         LinkedIn
                     </a>
                 </nav>
             </div>
-            
+
         </div>
 
-        <div class="max-w-7xl mx-auto border-t-2 border-paper/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 relative z-10 reveal-hidden">
+        <div
+            class="max-w-7xl mx-auto border-t-2 border-paper/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 relative z-10 reveal-hidden">
             <p class="font-mono text-xs text-paper/50">© 2026 ANDIKA SAPUTRA. DIBANGUN DENGAN HTML, CSS, JS MURNI.</p>
             <p class="font-mono text-xs text-paper/50 flex items-center gap-2">
                 STATUS SISTEM: ONLINE <span class="w-2 h-2 bg-acid inline-block rounded-full animate-pulse"></span>
@@ -642,4 +880,5 @@
 
     <script src="./js/main.js"></script>
 </body>
+
 </html>
