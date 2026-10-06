@@ -1,0 +1,96 @@
+Nama :  Andika Saputra
+Program Studi : Manajemen Informatika
+Kampus : Politeknik LP3I Jakarta
+email : ndiksptr159@gmail.com
+github : https://github.com/ndiksptr
+linkend : www.linkedin.com/in/ndik15
+
+Deskripsi 
+Mahasiswa aktif Program Studi Manajemen Informatika Politeknik LP3I Jakarta yang memiliki ketertarikan
+dalam bidang administrasi dokumen, operasional jaringan, dan web development. Memiliki kemampuan dalam
+membangun website, menangani permasalahan ringan pada hardware dan software, serta memahami dasar
+administrasi dan jaringan komputer. Jujur, disiplin, mampu bekerja secara individu maupun dalam tim, serta
+memiliki semangat belajar yang tinggi untuk terus mengembangkan kemampuan dan berkontribusi secara
+profesional.
+
+Pendidikan
+POLITEKNIK LP3I JAKARTA | Manajemen Informatika | 2024 - Sekarang
+IPK : 3.72/4.00
+SMK NEGERI 7 JAKARTA | Teknik Komputer dan Jaringan | 2021 - 2024
+Rata rata nilai = 86.01
+
+Pengalaman Kerja & Projek
+Pembuatan Website E-commerce ReadOnl1ne Buku Digital | Mahasiswa 
+Sep 2025 - Jan 2026
+Melakukan analisis kebutuhan sistem dan mendesain antarmuka pengguna (UI) menggunakan Figma serta
+membuat prototype untuk memvalidasi alur penggunaan.
+Menyusun dokumentasi perancangan sistem menggunakan UML, Use Case Diagram, Activity Diagram,
+dan Entity Relationship Diagram (ERD).
+Mengembangkan website buku digital menggunakan PHP, HTML, CSS, Bootstrap, dan CodeIgniter 4
+(CI4) dengan konsep MVC.
+Mengimplementasikan fitur seperti autentikasi pengguna, katalog buku, pencarian, manajemen data, serta
+dashboard admin.
+
+PT IP Network Solusindo  |  Junior System Engineer (PKL)
+Des 2022 - April 2023
+Implementasi proyek server hadoop di TTC Telkomsel BSD yang terdiri dari 200 server
+Implementasi proyek server FTP di TTC Telkomsel Simatupang yang terdiri dari 10 server
+Implementasi server seperti seperti unboxing, staging, mounting, installation, install OS, dan capture
+dokumenter
+Idrac installation and management idrac sesuai kebutuhan client 
+Melakukan kegiatan capture dokumenter untuk kebutuhan perusahaan dan quality control sesuai standar
+proyek server hadoop maupun FTP
+
+Madina Islamic School  |  Staff IT (PKL)
+Sep 2022 - Des 2022
+Memperbarui sistem operasi dan aplikasi yang dijalankan pengguna staff sekolah
+Melakukan backup data software atau komputer sekolah
+Memastikan seluruh perangkat pengguna terhubung ke jaringan dan berjalan dengan baik
+Melakukan perbaikan dan perawatan perangkat hardware seperti printer yang tidak berfungsi, pengisian
+tinta printer dan pembuatan kabel straight untuk kebutuhan sekolah
+Bertanggung jawab dalam menangkap momen penting acara sekolah 
+
+Sertifikasi
+Database Administrator | BNSP
+2026
+Melakukan operasi CRUD (Create, Read, Update, Delete) pada database menggunakan perintah SQL.
+Mendesain dan mengelola struktur database, termasuk pembuatan database, table, constraint, dan relasi
+antar tabel.
+Membuat dan mengelola objek database seperti View, Stored Procedure, Function, dan Trigger sesuai
+kebutuhan sistem.
+Menulis serta mengoptimalkan query SQL untuk pengolahan dan pengambilan data secara efisien.
+
+Tenaga Operator Komputer | BNSP
+2025
+Menggunakan Microsoft Word untuk membuat dan mengelola dokumen, surat resmi, serta Mail Merge
+untuk kebutuhan surat massal.
+Menggunakan Microsoft Excel untuk mengolah data dengan rumus seperti IF, SUM, AVERAGE,
+COUNT, serta membuat tabel dan laporan sederhana.
+Membuat presentasi menggunakan Microsoft PowerPoint dengan desain yang rapi, penggunaan animasi
+dasar, dan penyajian informasi yang efektif.
+
+
+Teknik Komputer dan Jaringan level II | BNSP
+2024
+Mengonfigurasi MikroTik RouterOS, Access Point, serta layanan jaringan dasar (IP Addressing, DHCP,
+NAT, dan Wireless).
+Melakukan instalasi, pemeliharaan, dan troubleshooting perangkat komputer serta jaringan LAN.
+Membuat, memasang, dan menguji kabel jaringan UTP menggunakan standar
+
+
+Kemampuan
+Konfigurasi Mikrotik (Internet Gateway, DHCP Server, Address)
+Rekayasa Aplikasi dan Web (Use Case, Class Diagram, ERD, Activity Diagram)
+Web Programming (PHP, HTML, CSS, BOOTSTRAP, CODEIGNITER 4, GIT, GITHUB)
+Microsoft Office ( Word , Excel, dan PPT )
+Desain Grafis (Capcut, Canva, dan Figma)
+
+
+organisasi
+LP3I Computer Club / LCC
+Jabatan / Posisi
+Bendahara Peran & Tanggungjawab dan Melakukan Rekap Kas
+
+Kesatuan Mahasiswa Islam LP3I / KAMIL
+Jabatan / Posisi
+Humas Peran & Tanggungjawab Melakukan dokumentasi dan memberikan informasi

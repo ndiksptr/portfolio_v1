@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-paper text-ink transition-colors duration-300;
+    cursor: none;
+    overflow-x: hidden;
+  }
+
+  .dark body {
+    @apply bg-ink text-paper;
+  }
+
+  /* Make sure a links etc are also cursor none for custom cursor */
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    cursor: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .noise-overlay {
+    @apply fixed inset-0 pointer-events-none z-[9999] opacity-[0.03];
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noiseFilter)"/></svg>');
+  }
+
+  .dark .noise-overlay {
+    @apply opacity-[0.05];
+  }
+
+  .custom-cursor {
+    @apply fixed top-0 left-0 w-8 h-8 rounded-full bg-white pointer-events-none z-[10000] mix-blend-difference hidden md:block;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+      height 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    will-change: transform;
+  }
+
+  .custom-cursor.hovering {
+    @apply w-20 h-20;
+  }
+
+  .hard-btn {
+    @apply transition-transform transition-shadow duration-100 ease-out;
+  }
+
+  .hard-btn:active {
+    transform: translate(4px, 4px) !important;
+    box-shadow: 0px 0px 0px 0px currentColor !important;
+  }
+
+  .dark .hard-btn:active {
+    box-shadow: 0px 0px 0px 0px currentColor !important;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@layer utilities {
+  .text-outline {
+    -webkit-text-stroke: 2px #09090B;
+    color: transparent;
+  }
+
+  .dark .text-outline {
+    -webkit-text-stroke: 2px #F8F4E8;
+    color: transparent;
+  }
+
+  .text-outline-sm {
+    -webkit-text-stroke: 1px #09090B;
+    color: transparent;
+  }
+
+  .dark .text-outline-sm {
+    -webkit-text-stroke: 1px #F8F4E8;
+  }
+
+  .glitch-hover:hover {
+    animation: glitch 0.3s infinite;
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .animate-marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 22s linear infinite;
+  }
+
+  .marquee-wrapper:hover .animate-marquee {
+    animation-play-state: paused;
+  }
+
+  /* Scroll reveal classes */
+  .reveal-hidden {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  20% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}

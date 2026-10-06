@@ -1,0 +1,18 @@
+{
+  "name": "portfolio-andika",
+  "version": "1.0.0",
+  "description": "Andika Saputra Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./css/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./css/output.css --minify",
+    "compress": "node scripts/compress.js"
+  },
+  "keywords": [],
+  "author": "Andika Saputra",
+  "license": "ISC",
+  "devDependencies": {
+    "sharp": "^0.33.5",
+    "tailwindcss": "^3.4.1"
+  }
+}
