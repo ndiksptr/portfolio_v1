@@ -247,3 +247,143 @@
     transform: translateX(-50%);
   }
 }
+
+/* --- Live Chat Widget Animations & Utilities --- */
+@keyframes chatWiggle {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  15% {
+    transform: rotate(-14deg) scale(1.05);
+  }
+  30% {
+    transform: rotate(12deg) scale(1.05);
+  }
+  45% {
+    transform: rotate(-8deg) scale(1.02);
+  }
+  60% {
+    transform: rotate(6deg) scale(1.02);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+}
+
+.chat-wiggle {
+  animation: chatWiggle 0.9s cubic-bezier(0.36, 0.07, 0.19, 0.97) 3s 1;
+}
+
+@keyframes chatPanelEnter {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes chatPanelExit {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(16px) scale(0.96);
+  }
+}
+
+.chat-panel-enter {
+  transform-origin: bottom right;
+  animation: chatPanelEnter 0.3s cubic-bezier(0.2, 0.9, 0.2, 1) forwards;
+}
+
+.chat-panel-exit {
+  transform-origin: bottom right;
+  animation: chatPanelExit 0.2s ease-out forwards;
+}
+
+@keyframes messageIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message-animate-in {
+  animation: messageIn 0.25s cubic-bezier(0.2, 0.9, 0.2, 1) forwards;
+}
+
+@keyframes typingBounce {
+  0%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+}
+
+.typing-dot {
+  animation: typingBounce 1.2s infinite ease-in-out;
+}
+.typing-dot:nth-child(1) {
+  animation-delay: 0s;
+}
+.typing-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.typing-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+#chat-panel {
+  left: 12px;
+  right: 12px;
+  top: 12px;
+  height: calc(100dvh - 24px);
+  width: auto;
+}
+
+@media (min-width: 640px) {
+  #chat-panel {
+    left: auto;
+    top: auto;
+    right: 24px;
+    bottom: 96px;
+    width: 380px;
+    height: 540px;
+    max-height: 560px;
+  }
+}
+
+#chat-panel button:focus-visible,
+#chat-panel textarea:focus-visible,
+#chat-toggle-btn:focus-visible {
+  outline: 2px solid #D2E823 !important;
+  outline-offset: 2px !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chat-wiggle {
+    animation: none !important;
+  }
+  .chat-panel-enter,
+  .chat-panel-exit,
+  .message-animate-in {
+    animation: none !important;
+    transform: none !important;
+  }
+  .typing-dot {
+    display: none !important;
+  }
+  .reduced-typing-text {
+    display: inline-block !important;
+  }
+}

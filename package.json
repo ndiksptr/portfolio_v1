@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npx tailwindcss -i ./src/input.css -o ./css/output.css --watch",
     "build": "npx tailwindcss -i ./src/input.css -o ./css/output.css --minify",
-    "compress": "node scripts/compress.js"
+    "compress": "node scripts/optimize-images.js"
   },
   "keywords": [],
   "author": "Andika Saputra",
